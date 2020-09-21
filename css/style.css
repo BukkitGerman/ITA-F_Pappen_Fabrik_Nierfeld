@@ -2,7 +2,17 @@ body {
   height: 300vh;
   font-size: 62.5%; }
   body .wrapper {
+    display: flex;
+    margin: auto;
+    justify-content: center;
     min-height: 100%;
-    margin-bottom: -10rem; }
+    margin-bottom: -5rem;
+    color: #ffeeff; }
+    body .wrapper .content {
+      margin: 14rem 0 0 0;
+      min-width: 79vw; }
+
+form .link__form {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
