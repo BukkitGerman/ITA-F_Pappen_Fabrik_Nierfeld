@@ -19,30 +19,27 @@ header {
   align-items: center;
   padding: 5px 10%;
   width: 100%; }
-
-.logo {
-  margin: 0 0 0 0;
-  cursor: pointer;
-  width: 14vw; }
-
-.nav__links {
-  list-style: none; }
-  .nav__links li {
-    display: inline-block;
-    padding: 0px 20px; }
-    .nav__links li a {
-      transition: all 0.3s ease 0s; }
-      .nav__links li a:hover {
-        color: #D8991F; }
-
-button {
-  padding: 9px 25px;
-  background-color: #D8991F;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transform: all 0.3 ease 0s; }
-  button:hover {
-    background-color: #8B611B; }
+  header .logo {
+    margin: 0 0 0 0;
+    cursor: pointer;
+    width: 14vw; }
+  header .nav__links {
+    list-style: none; }
+    header .nav__links li {
+      display: inline-block;
+      padding: 0px 20px; }
+      header .nav__links li a {
+        transition: all 0.3s ease 0s; }
+        header .nav__links li a:hover {
+          color: #D8991F; }
+  header button {
+    padding: 9px 25px;
+    background-color: #D8991F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: all 0.3 ease 0s; }
+    header button:hover {
+      background-color: #8B611B; }
 
 /*# sourceMappingURL=navbar.css.map */

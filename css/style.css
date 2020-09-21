@@ -1,4 +1,8 @@
 body {
-  height: 300vh; }
+  height: 300vh;
+  font-size: 62.5%; }
+  body .wrapper {
+    min-height: 100%;
+    margin-bottom: -10rem; }
 
 /*# sourceMappingURL=style.css.map */

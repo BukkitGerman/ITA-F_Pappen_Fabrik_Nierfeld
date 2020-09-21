@@ -1,0 +1,29 @@
+footer, .push {
+  height: 50px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+  width: 100%; }
+  footer .nav__links {
+    list-style: none; }
+    footer .nav__links li {
+      display: inline-block;
+      padding: 0px 20px; }
+      footer .nav__links li a {
+        transition: all 0.3s ease 0s; }
+        footer .nav__links li a:hover {
+          color: #D8991F; }
+  footer button {
+    padding: 9px 25px;
+    background-color: #D8991F;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: all 0.3 ease 0s; }
+    footer button:hover {
+      background-color: #8B611B; }
+
+/*# sourceMappingURL=footer.css.map */
