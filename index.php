@@ -1,5 +1,6 @@
 <?php  
 include "templates/main.php";
+include "templates/produkte.php";
 
 ?>
 
@@ -19,11 +20,28 @@ showNavbar();
 <div class="wrapper">
 	<div class="content">
 		<?php
+			if(isset($_GET['p'])){
+				if($_GET['p'] === "produkte"){
+					echo showProdukte();
+				}elseif($_GET['p'] === "philosophie"){
 
-		echo "Lorem ipsum officia ut pariatur elit cillum qui cupidatat mollit velit veniam magna qui exercitation aute do in veniam minim cillum deserunt aliquip magna duis veniam in pariatur dolore aliqua fugiat voluptate incididunt.";
-			#if(isset($_POST['produkte'])){
-			#	echo "Testing Message.";
-			#}
+				}elseif($_GET['p'] === "historie"){
+
+				}elseif($_GET['p'] === "team"){
+
+				}elseif($_GET['p'] === "agb"){
+
+				}elseif($_GET['p'] === "impressum"){
+
+				}elseif($_GET['p'] === "datenschutz"){
+
+				}else{
+					echo "Home";
+				}
+			}else{
+				echo "Home";
+				#TODO Add showHome Function
+			}
 		?>
 	</div>
 	<div class="push"></div>

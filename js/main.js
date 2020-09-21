@@ -15,3 +15,8 @@ window.addEventListener('load', () => {
 
 
 })
+
+window.addEventListener('beforeunload', function (e) {
+  // the absence of a returnValue property on the event will guarantee the browser unload happens
+  delete e['returnValue'];
+})

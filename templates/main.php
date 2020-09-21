@@ -29,13 +29,13 @@ function showFooter(){
 		</div>
 		<a class='log link' name='login' href='#'><button>Login</button></a>
 	</footer>
-	<form method='POST' class='link__form' id='produkte' action='/'><input type='hidden' name='produkte' value='produkte'/></form>
-	<form method='POST' class='link__form' id='philosophie' action='/'><input type='hidden' name='philosophie' value='philosophie'/></form>
-	<form method='POST' class='link__form' id='historie' action='/'><input type='hidden' name='historie' value='historie'/></form>
-	<form method='POST' class='link__form' id='team' action='/'><input type='hidden' name='team' value='team'/></form>
-	<form method='POST' class='link__form' id='agb' action='/'><input type='hidden' name='agb' value='agb'/></form>
-	<form method='POST' class='link__form' id='impressum' action='/'><input type='hidden' name='impressum' value='impressum'/></form>
-	<form method='POST' class='link__form' id='datenschutz' action='/'><input type='hidden' name='datenschutz' value='datenschutz'/></form>
+	<form method='GET' class='link__form' id='produkte' action='/'><input type='hidden' name='p' value='produkte'/></form>
+	<form method='GET' class='link__form' id='philosophie' action='/'><input type='hidden' name='p' value='philosophie'/></form>
+	<form method='GET' class='link__form' id='historie' action='/'><input type='hidden' name='p' value='historie'/></form>
+	<form method='GET' class='link__form' id='team' action='/'><input type='hidden' name='p' value='team'/></form>
+	<form method='GET' class='link__form' id='agb' action='/'><input type='hidden' name='p' value='agb'/></form>
+	<form method='GET' class='link__form' id='impressum' action='/'><input type='hidden' name='p' value='impressum'/></form>
+	<form method='GET' class='link__form' id='datenschutz' action='/'><input type='hidden' name='p' value='datenschutz'/></form>
 	";
 }
 
