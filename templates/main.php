@@ -36,7 +36,13 @@ function showFooter(){
 	<form method='GET' class='link__form' id='agb' action='/'><input type='hidden' name='p' value='agb'/></form>
 	<form method='GET' class='link__form' id='impressum' action='/'><input type='hidden' name='p' value='impressum'/></form>
 	<form method='GET' class='link__form' id='datenschutz' action='/'><input type='hidden' name='p' value='datenschutz'/></form>
+	<form method='GET' class='link__form' id='kontakt' action='/'><input type='hidden' name='p' value='kontakt'/></form>
 	";
+	if($status === true){
+	echo "<form method='GET' class='link__form' id='login' action='/'><input type='hidden' name='p' value='login'/></form>";
+	}else{
+	echo "<form method='GET' class='link__form' id='login' action='/'><input type='hidden' name='p' value='login'/></form>";
+	}
 }
 
  ?>

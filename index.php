@@ -1,6 +1,7 @@
 <?php  
 include "templates/main.php";
 include "templates/produkte.php";
+include "templates/login.php";
 
 ?>
 
@@ -34,6 +35,11 @@ showNavbar();
 				}elseif($_GET['p'] === "impressum"){
 
 				}elseif($_GET['p'] === "datenschutz"){
+
+				}elseif($_GET['p'] === "login"){
+					showLogin();
+					
+				}elseif($_GET['p'] === "kontakt"){
 
 				}else{
 					echo "Home";
