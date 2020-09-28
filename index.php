@@ -39,7 +39,6 @@ showNavbar();
 
 				}elseif($_GET['p'] === "login"){
 					showLogin();
-					
 				}elseif($_GET['p'] === "kontakt"){
 
 				}else{

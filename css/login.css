@@ -1,6 +1,7 @@
-.login {
+form.login {
   margin: auto;
+  position: absolute;
   min-width: 80vw;
-  padding: auto; }
+  background-color: red; }
 
 /*# sourceMappingURL=login.css.map */
