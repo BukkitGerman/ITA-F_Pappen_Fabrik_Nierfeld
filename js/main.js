@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
 
 	LINKS.forEach(item => {
 		item.addEventListener('click', (e) => {
+			//prevent the Default click event on the ".link" taged Tags.
 			e.preventDefault();
 			document.querySelector('#'+item.name).submit();	
 		})
