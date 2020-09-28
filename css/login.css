@@ -6,7 +6,25 @@ div.login {
   height: 50vh;
   background: #999;
   border-radius: 2rem; }
+  div.login .logo {
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8rem;
+    background: transparent; }
   div.login .title {
-    background: transperent; }
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: transparent; }
+  div.login .sub-title {
+    padding-top: 0.3rem;
+    font-size: 0.9rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: transparent; }
 
 /*# sourceMappingURL=login.css.map */
