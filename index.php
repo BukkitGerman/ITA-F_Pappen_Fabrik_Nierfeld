@@ -1,4 +1,4 @@
-<?php  
+	<?php  
 include "templates/main.php";
 include "templates/produkte.php";
 include "templates/login.php";
@@ -12,6 +12,7 @@ include "templates/login.php";
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
 <script type="text/javascript" src="js/main.js"></script>
