@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
 div.login
-	position: static
+	position: fixed
 	margin: auto
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
 	width: 35vw
 	height: 50vh
 	background: #999
@@ -26,3 +29,44 @@ div.login
 		text-transform: uppercase
 		font-weight: bold
 		background: transparent
+	form
+		padding-top: 1rem
+		background: transparent
+
+		input
+			background: transparent
+			text-align: center
+			border-radius: 1rem
+			max-height: 2rem
+			min-height: 1rem
+			border: 0.1rem #444
+			border-style: inset none outset none
+			color: #eee
+			transition: all 2s ease
+			&[type="text"]:hover
+				width: 47%
+			&[type="password"]:hover
+				width: 47%
+			&[type="submit"]
+				width: 5rem
+				max-height: 3rem
+				min-height: 2rem
+				border-radius: 0.5rem
+				text-transform: uppercase
+				font-weight: bold
+
+		.username
+			display: flex
+			justify-content: center
+			background: transparent
+			padding: 0.25rem
+		.password
+			display: flex
+			justify-content: center
+			background: transparent
+			padding: 0.25rem
+		.submit
+			display: flex
+			justify-content: center
+			background: transparent
+			padding-top: 2rem
