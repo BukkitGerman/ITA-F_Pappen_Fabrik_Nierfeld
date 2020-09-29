@@ -22,32 +22,40 @@ showNavbar();
 <div class="wrapper">
 	<div class="content">
 		<?php
-			if(isset($_GET['p'])){
-				if($_GET['p'] === "produkte"){
-					echo showProdukte();
-				}elseif($_GET['p'] === "philosophie"){
+		if(isset($_POST['usr']) && isset($_POST['pwd'])){
+			/* TODO: DB Abfrage
+			 * Session setzten.
+			 * User Login
+			 *
+			 */
+		}
 
-				}elseif($_GET['p'] === "historie"){
+		if(isset($_GET['p'])){
+			if($_GET['p'] === "produkte"){
+				echo showProdukte();
+			}elseif($_GET['p'] === "philosophie"){
 
-				}elseif($_GET['p'] === "team"){
+			}elseif($_GET['p'] === "historie"){
 
-				}elseif($_GET['p'] === "agb"){
+			}elseif($_GET['p'] === "team"){
 
-				}elseif($_GET['p'] === "impressum"){
+			}elseif($_GET['p'] === "agb"){
 
-				}elseif($_GET['p'] === "datenschutz"){
+			}elseif($_GET['p'] === "impressum"){
 
-				}elseif($_GET['p'] === "login"){
-					showLogin();
-				}elseif($_GET['p'] === "kontakt"){
+			}elseif($_GET['p'] === "datenschutz"){
 
-				}else{
-					echo "Home";
-				}
+			}elseif($_GET['p'] === "login"){
+				showLogin();
+			}elseif($_GET['p'] === "kontakt"){
+
 			}else{
 				echo "Home";
-				#TODO Add showHome Function
 			}
+		}else{
+			echo "Home";
+			#TODO Add showHome Function
+		}
 		?>
 	</div>
 	<div class="push"></div>

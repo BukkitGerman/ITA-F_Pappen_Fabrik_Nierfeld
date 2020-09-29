@@ -17,7 +17,8 @@ function showNavbar(){
 }
 
 
-function showFooter(){
+function showFooter($status = false){
+	
 	echo "
 	<footer>
 		<div class='footer'>
@@ -26,8 +27,13 @@ function showFooter(){
 				<li><a class='link' name='impressum' href='#'>IMPRESSUM</a></li>
 				<li><a class='link' name='datenschutz' href='#'>DATENSCHUTZ</a></li>
 			</ul>
-		</div>
-		<a class='log link' name='login' href='#'><button>Login</button></a>
+		</div>";
+		if($status === false){
+		echo "<a class='log link' name='login' href='#'><button>Login</button></a>";
+		}else{
+		echo "<a class='log link' name='logout' href='#'><button>Logout</button></a>";
+		}
+	echo "
 	</footer>
 	<form method='GET' class='link__form' id='produkte' action='/'><input type='hidden' name='p' value='produkte'/></form>
 	<form method='GET' class='link__form' id='philosophie' action='/'><input type='hidden' name='p' value='philosophie'/></form>
@@ -38,10 +44,10 @@ function showFooter(){
 	<form method='GET' class='link__form' id='datenschutz' action='/'><input type='hidden' name='p' value='datenschutz'/></form>
 	<form method='GET' class='link__form' id='kontakt' action='/'><input type='hidden' name='p' value='kontakt'/></form>
 	";
-	if($status === true){
+	if($status === false){
 	echo "<form method='GET' class='link__form' id='login' action='/'><input type='hidden' name='p' value='login'/></form>";
 	}else{
-	echo "<form method='GET' class='link__form' id='login' action='/'><input type='hidden' name='p' value='login'/></form>";
+	echo "<form method='GET' class='link__form' id='logout' action='/'><input type='hidden' name='p' value='logout'/></form>";
 	}
 }
 
