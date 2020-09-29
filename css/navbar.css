@@ -3,16 +3,31 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #24252A; }
+  /* Light mode */
+  /* Dark mode */ }
+  @media (prefers-color-scheme: light) {
+    * {
+      background-color: #f9f9f9; } }
+  @media (prefers-color-scheme: dark) {
+    * {
+      background-color: #24252A; } }
 
 @media (min-width: 992px) {
   li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #ffeeff;
-    text-decoration: none; }
+    /* Light mode */
+    /* Dark mode */
+    text-decoration: none; } }
+  @media (min-width: 992px) and (prefers-color-scheme: light) {
+    li, a, button {
+      color: #232323; } }
+  @media (min-width: 992px) and (prefers-color-scheme: dark) {
+    li, a, button {
+      color: #e6e6e6; } }
 
+@media (min-width: 992px) {
   header {
     position: fixed;
     display: flex;

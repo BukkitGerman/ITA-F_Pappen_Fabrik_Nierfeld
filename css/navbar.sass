@@ -4,14 +4,26 @@
 	box-sizing: border-box
 	margin: 0
 	padding: 0
-	background-color: #24252A
+	/* Light mode */
+	@media (prefers-color-scheme: light) 
+		background-color: #f9f9f9
+	/* Dark mode */
+	@media (prefers-color-scheme: dark) 
+		background-color: #24252A
+	
+
 $breakpoint: 992px
 @media (min-width: $breakpoint) 
 	li, a, button 
 		font-family: 'Montserrat', sans-serif
 		font-weight: 500
 		font-size: 16px
-		color: #ffeeff
+		/* Light mode */
+		@media (prefers-color-scheme: light) 
+			color: #232323
+		/* Dark mode */
+		@media (prefers-color-scheme: dark) 
+			color: #e6e6e6
 		text-decoration: none
 
 	header
