@@ -2,7 +2,7 @@
 function showNavbar(){
 	echo "
 	<header>
-		<img class='logo' src='images/logo.png' alt='logo'>
+		<a href='/'><img class='logo' src='images/logo.png' alt='logo'></a>
 		<nav>
 			<ul class='nav__links'>
 				<li><a class='link' name='produkte' href='#'>PRODUKTE</a></li>
