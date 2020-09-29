@@ -13,13 +13,29 @@ footer
 
 		li
 			display: inline-block
-			padding: 0px 20px
+			position: relative
+			width: auto
+			margin: 0 16px
+			text-align: center
+			order: 3
+			padding: 15px 0
+			cursor: pointer
+			&:after
+				position: absolute
+				content: ''
+				left: 0
+				bottom: 5px
+				height: 2px
+				width: 100%
+				background: #D8991F
+				opacity: 0
+				transition: all 0.2s linear
+			&:hover:after
+				opacity: 1
+				bottom: 8px
 
 			a 
 				transition: all 0.3s ease 0s
-
-				&:hover
-					color: #D8991F
 
 	button
 		padding: 9px 25px
