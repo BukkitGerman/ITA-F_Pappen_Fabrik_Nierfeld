@@ -50,10 +50,10 @@ showNavbar();
 			}elseif($_GET['p'] === "kontakt"){
 
 			}else{
-				echo "Home";
+				showHome();
 			}
 		}else{
-			echo "Home";
+			showHome();
 			#TODO Add showHome Function
 		}
 		?>

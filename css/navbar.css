@@ -34,7 +34,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 5px 10%;
-    width: 100%; }
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 black; } }
+  @media (min-width: 992px) and (prefers-color-scheme: light) {
+    header {
+      border-bottom: 2px solid #eeeeee; } }
+  @media (min-width: 992px) and (prefers-color-scheme: dark) {
+    header {
+      border-bottom: 2px solid #333333; } }
+@media (min-width: 992px) {
     header .logo {
       margin: 0 0 0 0;
       cursor: pointer;
