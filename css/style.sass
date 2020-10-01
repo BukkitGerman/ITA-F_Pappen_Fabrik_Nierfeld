@@ -7,14 +7,20 @@
 	margin: 0px
 	list-style-type: none
 
+	display: flex
+	justify-content: center
+	align-items: center
+
 .slide
 	position: absolute
-	left: 0px
-	top: 0px
-	width: 100%
+	width: 50%
 	height: 100%
 	opacity: 0
 	z-index: 1
+	@media (prefers-color-scheme: light) 
+		border-bottom: 1px solid #909090
+	@media (prefers-color-scheme: dark) 
+		border-bottom: 1px solid #cdcdcd
 
 	display: flex
 	justify-content: center

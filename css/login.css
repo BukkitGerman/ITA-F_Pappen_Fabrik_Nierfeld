@@ -7,8 +7,17 @@ div.login {
   transform: translate(-50%, -50%);
   width: 35vw;
   height: 50vh;
-  background: #999;
   border-radius: 2rem; }
+  @media (prefers-color-scheme: dark) {
+    div.login {
+      border: 1.3px solid #cccccc;
+      background: #999;
+      box-shadow: 1px 3px 3px #dddddd; } }
+  @media (prefers-color-scheme: light) {
+    div.login {
+      border: 1.3px solid #222222;
+      background: #ccc;
+      box-shadow: 1px 3px 3px #888888; } }
   div.login .logo {
     padding-top: 1rem;
     margin-left: auto;
@@ -40,8 +49,13 @@ div.login {
       min-height: 1rem;
       border: 0.1rem #444;
       border-style: inset none outset none;
-      color: #eee;
       transition: all 2s ease; }
+      @media (prefers-color-scheme: light) {
+        div.login form input {
+          color: #232323; } }
+      @media (prefers-color-scheme: dark) {
+        div.login form input {
+          color: #e6e6e6; } }
       div.login form input[type="text"]:hover {
         width: 47%; }
       div.login form input[type="password"]:hover {
@@ -53,6 +67,12 @@ div.login {
         border-radius: 0.5rem;
         text-transform: uppercase;
         font-weight: bold; }
+        @media (prefers-color-scheme: light) {
+          div.login form input[type="submit"] {
+            color: #232323; } }
+        @media (prefers-color-scheme: dark) {
+          div.login form input[type="submit"] {
+            color: #e6e6e6; } }
     div.login form .username {
       display: flex;
       justify-content: center;

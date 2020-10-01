@@ -7,8 +7,16 @@ div.login
 	transform: translate(-50%, -50%)
 	width: 35vw
 	height: 50vh
-	background: #999
+	@media (prefers-color-scheme: dark)
+		border: 1.3px solid #cccccc
+		background: #999
+		box-shadow: 1px 3px 3px #dddddd
+	@media (prefers-color-scheme: light)
+		border: 1.3px solid #222222
+		background: #ccc
+		box-shadow: 1px 3px 3px #888888
 	border-radius: 2rem
+	
 	.logo
 		padding-top: 1rem
 		margin-left: auto
@@ -41,7 +49,10 @@ div.login
 			min-height: 1rem
 			border: 0.1rem #444
 			border-style: inset none outset none
-			color: #eee
+			@media (prefers-color-scheme: light) 
+					color: #232323
+			@media (prefers-color-scheme: dark) 
+					color: #e6e6e6
 			transition: all 2s ease
 			&[type="text"]:hover
 				width: 47%
@@ -54,6 +65,10 @@ div.login
 				border-radius: 0.5rem
 				text-transform: uppercase
 				font-weight: bold
+				@media (prefers-color-scheme: light) 
+					color: #232323
+				@media (prefers-color-scheme: dark) 
+					color: #e6e6e6
 
 		.username
 			display: flex
