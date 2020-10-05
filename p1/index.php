@@ -1,7 +1,6 @@
-	<?php  
+<?php  
 include "templates/main.php";
 include "templates/produkte.php";
-include "templates/login.php";
 
 ?>
 
@@ -30,6 +29,7 @@ showNavbar();
 			 *
 			 */
 		}
+		echo file_get_contents("copy.html");
 
 		if(isset($_GET['p'])){
 			if($_GET['p'] === "produkte"){
@@ -46,8 +46,6 @@ showNavbar();
 
 			}elseif($_GET['p'] === "datenschutz"){
 
-			}elseif($_GET['p'] === "login"){
-				showLogin();
 			}elseif($_GET['p'] === "kontakt"){
 
 			}else{

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
+
+#slides
+	position: relative
+	height: 300px
+	padding: 0px
+	margin: 0px
+	list-style-type: none
+
+	display: flex
+	justify-content: center
+	align-items: center
+
+.slide
+	position: absolute
+	width: 50%
+	height: 100%
+	opacity: 0
+	z-index: 1
+	@media (prefers-color-scheme: light) 
+		border-bottom: 1px solid #909090
+	@media (prefers-color-scheme: dark) 
+		border-bottom: 1px solid #cdcdcd
+
+	display: flex
+	justify-content: center
+	align-items: center
+
+	transition: opacity 3s
+
+	img
+		max-height: 100%
+		max-width: 100%
+
+.showing
+	opacity: 1
+	z-index: 2
+
+
+body
+	height: 120vh
+	font-size: 62.5%
+	font-family: "Montserrat", sans-serif
+
+	.wrapper
+		display: flex
+		margin: auto
+		justify-content: center
+		min-height: 100%
+		margin-bottom: -5rem
+		/* Light mode */
+		@media (prefers-color-scheme: light) 
+			color: #232323
+		/* Dark mode */
+		@media (prefers-color-scheme: dark) 
+			color: #e6e6e6
+		.content 
+			margin: 10rem 6rem 10rem 6rem
+			min-width: 80vw
+			max-width: 80vw
+			font-size: 0.9rem
+
+
+.link__form
+	display: none
+	

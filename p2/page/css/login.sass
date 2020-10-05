@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
+div.login
+	position: fixed
+	margin: auto
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	width: 35vw
+	height: 50vh
+	@media (prefers-color-scheme: dark)
+		border: 1.3px solid #cccccc
+		background: #999
+		box-shadow: 1px 3px 3px #dddddd
+	@media (prefers-color-scheme: light)
+		border: 1.3px solid #222222
+		background: #ccc
+		box-shadow: 1px 3px 3px #888888
+	border-radius: 2rem
+	
+	.logo
+		padding-top: 1rem
+		margin-left: auto
+		margin-right: auto
+		width: 8rem
+		background: transparent
+	.title
+		padding-top: 1rem
+		font-size: 1.4rem
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+		background: transparent
+	.sub-title
+		padding-top: 0.3rem
+		font-size: 0.9rem
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+		background: transparent
+	form
+		padding-top: 1rem
+		background: transparent
+
+		input
+			background: transparent
+			text-align: center
+			border-radius: 1rem
+			max-height: 2rem
+			min-height: 1rem
+			border: 0.1rem #444
+			border-style: inset none outset none
+			@media (prefers-color-scheme: light) 
+					color: #232323
+			@media (prefers-color-scheme: dark) 
+					color: #e6e6e6
+			transition: all 2s ease
+			&[type="text"]:hover
+				width: 47%
+			&[type="password"]:hover
+				width: 47%
+			&[type="submit"]
+				width: 5rem
+				max-height: 3rem
+				min-height: 2rem
+				border-radius: 0.5rem
+				text-transform: uppercase
+				font-weight: bold
+				@media (prefers-color-scheme: light) 
+					color: #232323
+				@media (prefers-color-scheme: dark) 
+					color: #e6e6e6
+
+		.username
+			display: flex
+			justify-content: center
+			background: transparent
+			padding: 0.25rem
+		.password
+			display: flex
+			justify-content: center
+			background: transparent
+			padding: 0.25rem
+		.submit
+			display: flex
+			justify-content: center
+			background: transparent
+			padding-top: 2rem

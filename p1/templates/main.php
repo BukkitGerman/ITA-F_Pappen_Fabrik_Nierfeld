@@ -2,7 +2,7 @@
 function showNavbar(){
 	echo "
 	<header>
-		<a href='/'><img class='logo' src='images/logo.png' alt='logo'></a>
+		<a href='/'><img class='logo' alt='logo'></a>
 		<nav>
 			<ul class='nav__links'>
 				<li><a class='link' name='produkte' href='#'>PRODUKTE</a></li>
@@ -18,7 +18,6 @@ function showNavbar(){
 
 
 function showFooter($status = false){
-	
 	echo "
 	<footer>
 		<div class='footer'>
@@ -33,7 +32,6 @@ function showFooter($status = false){
 		}else{
 		echo "<a class='log link' name='logout' href='#'><button>Logout</button></a>";
 		}
-	echo file_get_contents("copy.html");
 	echo "
 	</footer>
 	<form method='GET' class='link__form' id='produkte' action='/'><input type='hidden' name='p' value='produkte'/></form>
@@ -46,7 +44,7 @@ function showFooter($status = false){
 	<form method='GET' class='link__form' id='kontakt' action='/'><input type='hidden' name='p' value='kontakt'/></form>
 	";
 	if($status === false){
-	echo "<form method='GET' class='link__form' id='login' action='/'><input type='hidden' name='p' value='login'/></form>";
+	echo "<form method='GET' class='link__form' id='login' action='page/login.php'><input type='hidden' name='p' value='login'/></form>";
 	}else{
 	echo "<form method='GET' class='link__form' id='logout' action='/'><input type='hidden' name='p' value='logout'/></form>";
 	}
