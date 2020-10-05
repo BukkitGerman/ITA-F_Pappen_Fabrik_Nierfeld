@@ -12,7 +12,14 @@
 		created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)");
 	*/
 
-	$db->exec("INSERT INTO users (username, email, passwort) VALUES ('Testuser', 'test@email.com', 'password')");
+
+	$pw_hash = password_hash("Password", PASSWORD_DEFAULT);
+
+	$smt = $db->prepare("INSERT INTO users (username, email, passwort) VALUES (:username, :email, :passwort)");
+	$smt->bindValue(':username', "Testuser");
+	$smt->bindValue(':email', "Test@user.de", SQLITE3_TEXT);
+	$smt->bindValue('passwort', $pw_hash);
+	$smt->execute();
 
 
 ?>

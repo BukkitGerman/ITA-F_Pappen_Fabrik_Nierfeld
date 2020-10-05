@@ -1,5 +1,7 @@
 <?php
+session_start();
 include "../page/server/main.php";
+include 'template/footer.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,12 +20,11 @@ include "../page/server/main.php";
 	<div class="content">
 	<script type="text/javascript" src="js/main.js"></script>
 
-
 	</div>
 	<div class="push"></div>
 </div>
 <?php
-	echo file_get_contents("template/footer.php");
+	echo showFooter	("template/footer.php");
 ?>
 </body>
 </html>
