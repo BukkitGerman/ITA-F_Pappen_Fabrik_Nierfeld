@@ -1,4 +1,6 @@
 <?php
+session_start();
+$db = new SQLite3("../server/database.db");
 include "../server/main.php";
 ?>
 <!DOCTYPE html>
@@ -13,6 +15,12 @@ include "../server/main.php";
 	<?php
 	echo file_get_contents("../img/copy.html");
 	echo file_get_contents("../template/header.html");
+	if(isset($_POST['usr']) && isset($_POST['pwd'])){
+		$username = $_POST['usr'];
+		$passwort = $_POST['pwd'];
+	
+		
+	}
 	?>
 	<div class="wrapper">
 		<div class="content">
