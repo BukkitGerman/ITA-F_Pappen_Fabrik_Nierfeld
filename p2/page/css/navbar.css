@@ -47,8 +47,7 @@
     header .logo {
       margin: 0 0 0 0;
       cursor: pointer;
-      width: 14vw;
-      background-image: url("../images/logo.png"); }
+      width: 14vw; }
     header .nav__links {
       list-style: none; }
       header .nav__links li {

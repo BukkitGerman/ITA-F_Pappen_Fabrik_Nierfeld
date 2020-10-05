@@ -19,7 +19,7 @@ include 'template/footer.php';
 <div class="wrapper">
 	<div class="content">
 	<script type="text/javascript" src="js/main.js"></script>
-
+		
 	</div>
 	<div class="push"></div>
 </div>
