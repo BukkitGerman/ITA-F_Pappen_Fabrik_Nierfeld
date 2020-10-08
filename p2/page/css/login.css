@@ -51,13 +51,17 @@ div.login {
       min-height: 1rem;
       border: 0.1rem #444;
       border-style: inset none outset none;
-      transition: all 2s ease; }
+      transition: all 0.2s ease; }
       @media (prefers-color-scheme: light) {
         div.login form input {
           color: #232323; } }
       @media (prefers-color-scheme: dark) {
         div.login form input {
           color: #e6e6e6; } }
+      div.login form input[type="text"] {
+        width: 10rem; }
+      div.login form input[type="password"] {
+        width: 10rem; }
       div.login form input[type="text"]:hover {
         width: 47%; }
       div.login form input[type="password"]:hover {
@@ -75,6 +79,8 @@ div.login {
         @media (prefers-color-scheme: dark) {
           div.login form input[type="submit"] {
             color: #e6e6e6; } }
+      div.login form input[type="submit"]:hover {
+        width: 20%; }
     div.login form .username {
       display: flex;
       justify-content: center;
