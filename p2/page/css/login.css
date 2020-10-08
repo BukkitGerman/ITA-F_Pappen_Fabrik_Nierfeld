@@ -6,7 +6,7 @@ div.login {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 35vw;
-  height: 30vh;
+  height: 50vh;
   border-radius: 2rem; }
   @media (prefers-color-scheme: dark) {
     div.login {
