@@ -1,0 +1,11 @@
+button {
+  padding: 9px 25px;
+  background-color: #D8991F;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transform: all 0.3 ease 0s; }
+  button:hover {
+    background-color: #8B611B; }
+
+/*# sourceMappingURL=dashboard.css.map */

@@ -13,6 +13,7 @@ include '../template/footer.php';
 	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<link rel="stylesheet" type="text/css" href="../css/dashboard.css">
 </head>
 <body>
 <?php
@@ -26,6 +27,7 @@ include '../template/footer.php';
 			if(isset($_SESSION['uid'])){
 				?>
 				<P>DASHBOARD</P>
+				<a class='log link' name='login' href='/login/logout.php'><button>Logout</button></a>
 				<?php
 			}else{
 				?>
