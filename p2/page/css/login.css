@@ -18,6 +18,8 @@ div.login {
       border: 1.3px solid #222222;
       background: #ccc;
       box-shadow: 1px 3px 3px #888888; } }
+  div.login textarea:focus, div.login input:focus {
+    outline: none; }
   div.login .logo {
     padding-top: 1rem;
     margin-left: auto;
