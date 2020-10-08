@@ -39,6 +39,7 @@ include '../template/footer.php';
 	<div class="wrapper">
 		<div class="content">
 			<script type="text/javascript" src="../js/main.js"></script>
+			<script type="text/javascript" src="../js/login.js"></script>
 			<?php
 			if(isset($_SESSION['uid'])){
 				echo "Logged in!";
@@ -49,9 +50,9 @@ include '../template/footer.php';
 				<div class='title'>Login</div>
 				<div class='sub-title'>Administraion</div>
 				<form method='POST'>
-					<div class='username'><input name='usr' placeholder='Username' type='text' required></div>
-					<div class='password'><input name='pwd' placeholder='Password' type='password' required></div>
-					<div class='submit'><input name='submit' type='submit' value='Login'></div>
+					<div class='username'><input id='usr' name='usr' placeholder='Username' type='text' required></div>
+					<div class='password'><input id='pwd' name='pwd' placeholder='Password' type='password' required></div>
+					<div class='submit'><input id='submit' name='submit' type='submit' value='Login'></div>
 				</form>
 				<p><?php echo $errorMessage ?></p>
 			</div>

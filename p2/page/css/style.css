@@ -50,7 +50,7 @@ body {
         color: #232323; } }
     @media (prefers-color-scheme: dark) {
       body .wrapper {
-        color: #e6e6e6; } }
+        color: #F6ECF0; } }
     body .wrapper .content {
       margin: 10rem 6rem 10rem 6rem;
       min-width: 80vw;
