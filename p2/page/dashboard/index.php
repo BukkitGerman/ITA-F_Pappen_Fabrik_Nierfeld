@@ -23,11 +23,24 @@ include '../template/footer.php';
 <div class="wrapper">
 	<div class="content">
 	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/contentManager.js"></script>
 		<?php 
 			if(isset($_SESSION['uid'])){
 				?>
 				<P>DASHBOARD</P>
 				<a class='log link' name='login' href='/login/logout.php'><button>Logout</button></a>
+
+
+				<form method="POST" action="../server/changeContent.php">
+					<textarea class='edit' name='produkte' id='produkte'></textarea>
+					<input type="button" id="bold" value="bold"/>
+    				<input type="button" id="italic" value="italic" />
+    				<input type="button" id="underline" value="underline" />
+					<input type="hidden" name="file" value="produkte">
+					<input type="submit" name="aendern" value="Ändern">
+				</form>
+					
+					
 				<?php
 			}else{
 				?>

@@ -1,11 +1,29 @@
 button {
   padding: 9px 25px;
-  background-color: #D8991F;
+  background-color: #e1a927;
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transform: all 0.3 ease 0s; }
   button:hover {
-    background-color: #8B611B; }
+    background-color: #6d5c2d; }
+
+form input[type="button"], form input[type="submit"] {
+  color: #F6ECF0;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background-color: #e1a927; }
+
+.edit {
+  width: 80vw;
+  height: 40vh;
+  resize: none;
+  outline: none; }
+  @media (prefers-color-scheme: light) {
+    .edit {
+      color: #232323; } }
+  @media (prefers-color-scheme: dark) {
+    .edit {
+      color: #F6ECF0; } }
 
 /*# sourceMappingURL=dashboard.css.map */

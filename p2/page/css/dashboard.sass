@@ -1,10 +1,34 @@
+$primary: #232323
+$secondary: #F6ECF0
+$firma-1: #e1a927
+$firma-2: #6d5c2d
+
 button
 	padding: 9px 25px
-	background-color: #D8991F
+	background-color: $firma-1
 	border: none
 	border-radius: 50px
 	cursor: pointer
 	transform: all 0.3 ease 0s
 
 	&:hover
-		background-color: #8B611B
+		background-color: $firma-2
+
+form
+	input
+		&[type="button"], &[type="submit"]
+			color: $secondary
+			border-radius: .4rem
+			padding: .2rem
+			background-color: $firma-1
+
+
+.edit
+	width: 80vw
+	height: 40vh
+	resize: none
+	outline: none
+	@media (prefers-color-scheme: light) 
+		color: $primary
+	@media (prefers-color-scheme: dark) 
+		color: $secondary

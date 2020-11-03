@@ -20,7 +20,7 @@ include '../template/footer.php';
 	<div class="content">
 	<script type="text/javascript" src="../js/main.js"></script>
 		<?php
-			echo file_get_contents("../template/produkte.html")
+			echo file_get_contents("../template/content/produkte.html")
 		?>
 	</div>
 	<div class="push"></div>

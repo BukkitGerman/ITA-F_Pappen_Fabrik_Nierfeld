@@ -39,7 +39,7 @@
     box-shadow: 0 0 black; } }
   @media (min-width: 992px) and (prefers-color-scheme: light) {
     header {
-      border-bottom: 2px solid #eeeeee; } }
+      border-bottom: 5rem solid #5c8450; } }
   @media (min-width: 992px) and (prefers-color-scheme: dark) {
     header {
       border-bottom: 2px solid #333333; } }
