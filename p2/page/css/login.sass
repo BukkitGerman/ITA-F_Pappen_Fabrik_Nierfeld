@@ -9,7 +9,7 @@ div.login
 	top: 50%
 	transform: translate(-50%, -50%)
 	width: 30vw
-	height: 53vh
+	height: 60vh
 	@media (prefers-color-scheme: dark)
 		border: 1.3px solid #cccccc
 		background: $firma-1
@@ -21,12 +21,14 @@ div.login
 		outline: none
 	.logo
 		border-radius: 100%
+		border: 2px solid #000
 		padding-top: 2rem
+		margin-top: 1rem
 		margin-left: auto
 		margin-right: auto
 		width: 8rem
 		height: 8rem
-		background: $primary
+		background: #fdfafd
 		img
 			position: absolute
 			padding: 0px
@@ -39,11 +41,13 @@ div.login
 		font-size: 1.4rem
 		text-align: center
 		text-transform: uppercase
+		color: #232323
 		font-weight: bold
 		background: transparent
 	.sub-title
 		padding-top: 0.3rem
 		font-size: 0.9rem
+		color: #232323
 		text-align: center
 		text-transform: uppercase
 		font-weight: bold
@@ -53,36 +57,34 @@ div.login
 		background: transparent
 
 		input
-			background: transparent
+			background: #e6e6e6
 			text-align: center
-			border-radius: 1rem
-			max-height: 2rem
-			min-height: 1rem
+			max-height: 3rem
+			min-height: 2rem
 			border: 0.1rem #444
 			border-style: inset none outset none
-			@media (prefers-color-scheme: light) 
-					color: #232323
 			@media (prefers-color-scheme: dark) 
+					color: #232323
+			@media (prefers-color-scheme: light) 
 					color: #e6e6e6
 			transition: all .2s ease
 			&[type="text"]
-				width: 10rem
+				width: 17rem
 			&[type="password"]
-				width: 10rem
+				width: 17rem
 			&[type="text"]:hover
-				width: 47%
+				width: 17.5rem
 			&[type="password"]:hover
-				width: 47%
+				width: 17.5rem
 			&[type="submit"]
 				width: 5rem
 				max-height: 3rem
 				min-height: 2rem
-				border-radius: 0.5rem
 				text-transform: uppercase
 				font-weight: bold
-				@media (prefers-color-scheme: light) 
-					color: #232323
 				@media (prefers-color-scheme: dark) 
+					color: #232323
+				@media (prefers-color-scheme: light) 
 					color: #e6e6e6
 			&[type="submit"]:hover
 				width: 20%

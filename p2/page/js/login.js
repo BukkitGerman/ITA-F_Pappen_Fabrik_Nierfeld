@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
 	submit.addEventListener('mouseover', () => {
 		if((usr.value == "") || pwd.value == ""){
 			console.log("Red")
-			submit.style.backgroundColor = "red";
+			submit.style.backgroundColor = "#8b4513";
 		}else{
 			console.log("Green")
 			submit.style.backgroundColor = "green";
