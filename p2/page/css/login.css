@@ -1,31 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 div.login {
   position: fixed;
-  margin: auto;
+  margin: 5vh auto auto auto;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 35vw;
-  height: 50vh;
-  border-radius: 2rem; }
+  width: 30vw;
+  height: 53vh; }
   @media (prefers-color-scheme: dark) {
     div.login {
       border: 1.3px solid #cccccc;
-      background: #999;
-      box-shadow: 1px 3px 3px #dddddd; } }
+      background: #e1a927; } }
   @media (prefers-color-scheme: light) {
     div.login {
       border: 1.3px solid #222222;
-      background: #ccc;
-      box-shadow: 1px 3px 3px #888888; } }
+      background: #ccc; } }
   div.login textarea:focus, div.login input:focus {
     outline: none; }
   div.login .logo {
-    padding-top: 1rem;
+    border-radius: 100%;
+    padding-top: 2rem;
     margin-left: auto;
     margin-right: auto;
     width: 8rem;
-    background: transparent; }
+    height: 8rem;
+    background: #232323; }
+    div.login .logo img {
+      position: absolute;
+      border-radius: 10rem;
+      padding: 0px;
+      margin-top: -1rem;
+      margin-left: 0.3rem;
+      width: 8rem;
+      background: transparent; }
   div.login .title {
     padding-top: 1rem;
     font-size: 1.4rem;

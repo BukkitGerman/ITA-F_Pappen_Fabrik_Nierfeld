@@ -46,7 +46,9 @@ include '../template/footer.php';
 			}else{
 			?>
 			<div class='login'>
-				<div class='logo'><img class='logo' src='../img/logo.png' alt='logo'></div>
+				<div class='logo'>
+					<img src='../img/logo.png' alt='logo'>
+				</div>
 				<div class='title'>Login</div>
 				<div class='sub-title'>Administraion</div>
 				<form method='POST'>
