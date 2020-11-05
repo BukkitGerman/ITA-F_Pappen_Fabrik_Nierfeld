@@ -60,10 +60,6 @@ div.login {
         width: 17rem; }
       div.login form input[type="password"] {
         width: 17rem; }
-      div.login form input[type="text"]:hover {
-        width: 17.5rem; }
-      div.login form input[type="password"]:hover {
-        width: 17.5rem; }
       div.login form input[type="submit"] {
         width: 5rem;
         max-height: 3rem;
@@ -72,7 +68,8 @@ div.login {
         font-weight: bold;
         color: #232323; }
       div.login form input[type="submit"]:hover {
-        width: 20%; }
+        background: #ddd;
+        cursor: pointer; }
     div.login form .username {
       display: flex;
       justify-content: center;
