@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+#slides {
+  position: relative;
+  height: 300px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.slide {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  border-bottom: 1px solid #909090;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 3s; }
+  .slide img {
+    max-height: 100%;
+    max-width: 100%; }
+
+.showing {
+  opacity: 1;
+  z-index: 2; }
+
+body {
+  height: 120vh;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif; }
+  body .wrapper {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    min-height: 100%;
+    margin-bottom: -5rem;
+    color: #232323; }
+    body .wrapper .content {
+      margin: 11.5rem 6rem 10rem 6rem;
+      min-width: 80vw;
+      max-width: 80vw;
+      font-size: 0.9rem; }
+
+.link__form {
+  display: none; }
+
+#all {
+  margin: 15px 0 5px 0px;
+  overflow: auto;
+  padding: 15px 15px;
+  background-color: transparent;
+  /* Light mode */
+  /* Dark mode */ }
+  @media (prefers-color-scheme: light) {
+    #all {
+      color: #232323; } }
+  @media (prefers-color-scheme: dark) {
+    #all {
+      color: #F6ECF0; } }
+  #all p {
+    font-family: "Arial", sans-serif, Arial Narrow, Arial;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0 0 9px 0;
+    /* Light mode */
+    /* Dark mode */ }
+    @media (prefers-color-scheme: light) {
+      #all p {
+        color: #232323; } }
+    @media (prefers-color-scheme: dark) {
+      #all p {
+        color: #F6ECF0; } }
+  #all .highlight {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "Trebuchet MS", Tahoma, Arial, Helvetica, sans-serif;
+    color: #FCB209;
+    font-weight: normal; }
+  #all ul {
+    margin: 0 0 9px 0;
+    font-family: "PT Sans", sans-serif, Arial Narrow, Arial;
+    font-size: 13px;
+    line-height: 20px; }
+  #all .produkt {
+    color: #D8991F; }
+  #all table {
+    border-collapse: collapse;
+    font: normal 13px "Arial", sans-serif, Arial Narrow, Arial;
+    color: #232323;
+    margin: 10px 0px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap')
+
+$primary: #232323
+$secondary: #F6ECF0
+$firma-1: #FCB209
+$firma-2: #D8991F
+$grun: #5c8450
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	background-color: #f9f9f9
+	
+
+$breakpoint: 992px
+@media (min-width: $breakpoint) 
+	li, a, button 
+		font-family: 'Montserrat', sans-serif
+		font-weight: 500
+		font-size: 16px
+		color: #232323
+
+	header
+		position: fixed
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 5px 10%
+		width: 100%
+		z-index: 20
+		box-shadow: 0 0 black
+		border-top: 3rem solid $firma-1
+		border-bottom: .2rem solid $firma-1	
+			
+
+		.logo
+			margin: 0 0 0 0
+			cursor: pointer
+			width: 10vw
+
+		.nav__links
+			list-style: none
+
+			li
+				display: inline-block
+				position: relative
+				width: auto
+				margin: 0 16px
+				text-align: center
+				order: 3
+				padding: 15px 0
+				cursor: pointer			
+				&:after
+					position: absolute
+					content: ''
+					left: 0
+					bottom: 5px
+					height: 2px
+					width: 100%
+					background: $firma-1
+					opacity: 0
+					transition: all 0.2s linear
+				&:hover:after
+					opacity: 1
+					bottom: 8px
+				a
+					text-decoration: none
+					transition: all 0.3s ease 0s
+
+		button
+			padding: 9px 25px
+			background-color: $firma-1
+			border: none
+			border-radius: 50px
+			cursor: pointer
+			transform: all 0.3 ease 0s
+
+			&:hover
+				background-color: $firma-2
+
+@media (max-width: $breakpoint)
+	li, a, button 
+		font-family: 'Montserrat', sans-serif
+		font-weight: 500
+		font-size: 16px
+		color: #ffeeff
+		text-decoration: none
+
+	nav 
+		background: transparent
+		padding: 5px 40px
+		ul
+			list-style: none
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+			li
+				position: relative
+				width: auto
+				margin: 0 16px
+				text-align: center
+				order: 3
+				padding: 15px 0
+				cursor: pointer
+				&:after
+					position: absolute
+					content: ''
+					left: 0
+					bottom: 5px
+					height: 2px
+					width: 100%
+					background: $firma-1
+					opacity: 0
+					transition: all 0.2s linear
+				&:hover:after
+					opacity: 1
+					bottom: 8px

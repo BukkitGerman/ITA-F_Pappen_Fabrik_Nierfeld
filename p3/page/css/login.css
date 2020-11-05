@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+div.login {
+  position: fixed;
+  margin: 5vh auto auto auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  height: 60vh;
+  border: 1.3px solid #222222;
+  background: #FCB209; }
+  div.login textarea:focus, div.login input:focus {
+    outline: none; }
+  div.login .logo {
+    border-radius: 100%;
+    border: 2px solid #000;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8rem;
+    height: 8rem;
+    background: #fdfafd; }
+    div.login .logo img {
+      position: absolute;
+      padding: 0px;
+      margin-top: -1rem;
+      margin-left: 0.3rem;
+      width: 8rem;
+      background: transparent; }
+  div.login .title {
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #232323;
+    font-weight: bold;
+    background: transparent; }
+  div.login .sub-title {
+    padding-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #232323;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: transparent; }
+  div.login form {
+    padding-top: 1rem;
+    background: transparent; }
+    div.login form input {
+      background: #F6ECF0;
+      text-align: center;
+      max-height: 3rem;
+      min-height: 2rem;
+      border: 0.1rem #444;
+      border-style: inset none outset none;
+      color: #232323;
+      transition: all 0.2s ease; }
+      div.login form input[type="text"] {
+        width: 17rem; }
+      div.login form input[type="password"] {
+        width: 17rem; }
+      div.login form input[type="text"]:hover {
+        width: 17.5rem; }
+      div.login form input[type="password"]:hover {
+        width: 17.5rem; }
+      div.login form input[type="submit"] {
+        width: 5rem;
+        max-height: 3rem;
+        min-height: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #232323; }
+      div.login form input[type="submit"]:hover {
+        width: 20%; }
+    div.login form .username {
+      display: flex;
+      justify-content: center;
+      background: transparent;
+      padding: 0.25rem; }
+    div.login form .password {
+      display: flex;
+      justify-content: center;
+      background: transparent;
+      padding: 0.25rem; }
+    div.login form .submit {
+      display: flex;
+      justify-content: center;
+      background: transparent;
+      padding-top: 2rem; }
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap")
+
+$primary: #232323
+$secondary: #F6ECF0
+$firma-1: #FCB209
+$firma-2: #D8991F
+$grun: #5c8450
+
+div.login
+	position: fixed
+	margin: 5vh auto auto auto
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	width: 30vw
+	height: 60vh
+	border: 1.3px solid #222222
+	background: $firma-1
+	
+	textarea:focus, input:focus
+		outline: none
+	.logo
+		border-radius: 100%
+		border: 2px solid #000
+		padding-top: 2rem
+		margin-top: 1rem
+		margin-left: auto
+		margin-right: auto
+		width: 8rem
+		height: 8rem
+		background: #fdfafd
+		img
+			position: absolute
+			padding: 0px
+			margin-top: -1rem
+			margin-left: 0.3rem
+			width: 8rem
+			background: transparent
+	.title
+		padding-top: 1rem
+		font-size: 1.4rem
+		text-align: center
+		text-transform: uppercase
+		color: $primary
+		font-weight: bold
+		background: transparent
+	.sub-title
+		padding-top: 0.3rem
+		font-size: 0.9rem
+		color: $primary
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+		background: transparent
+	form
+		padding-top: 1rem
+		background: transparent
+
+		input
+			background: $secondary
+			text-align: center
+			max-height: 3rem
+			min-height: 2rem
+			border: 0.1rem #444
+			border-style: inset none outset none
+			color: $primary
+			transition: all .2s ease
+			&[type="text"]
+				width: 17rem
+			&[type="password"]
+				width: 17rem
+			&[type="text"]:hover
+				width: 17.5rem
+			&[type="password"]:hover
+				width: 17.5rem
+			&[type="submit"]
+				width: 5rem
+				max-height: 3rem
+				min-height: 2rem
+				text-transform: uppercase
+				font-weight: bold
+				color: $primary
+			&[type="submit"]:hover
+				width: 20%
+
+		.username
+			display: flex
+			justify-content: center
+			background: transparent
+			padding: 0.25rem
+		.password
+			display: flex
+			justify-content: center
+			background: transparent
+			padding: 0.25rem
+		.submit
+			display: flex
+			justify-content: center
+			background: transparent
+			padding-top: 2rem
