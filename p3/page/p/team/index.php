@@ -24,18 +24,7 @@ echo file_get_contents("../../img/copy.html");
 		<div class="team">
 			<?php
 				$Parsedown = new Parsedown();
-				
-
-				if ($handle = opendir('../../content/team')) {
-    				while (false !== ($entry = readdir($handle))) {
-    					if($entry !== ".")
-    						if($entry !== "..")
-				        		echo $Parsedown->text(file_get_contents("../../content/team/".$entry));
-				        		echo "<div class='parting'></div>";
-				    }
-
-				    closedir($handle);
-				}
+				echo $Parsedown->text(file_get_contents("../../content/team.md"));
 			 ?>
 		 </div>
 	</div>

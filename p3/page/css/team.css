@@ -2,10 +2,11 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
-  .content .team .parting {
+  .content .team hr {
     width: 80vw;
-    height: 0.1rem;
-    background: #FCB209; }
+    height: 0.2rem;
+    background: #FCB209;
+    border: none; }
   .content .team p {
     margin-top: 1.5rem;
     flex-grow: 2;

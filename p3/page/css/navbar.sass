@@ -21,8 +21,26 @@ $breakpoint: 992px
 		font-size: 16px
 		color: #232323
 
+	.border
+		position: fixed
+		top: 0px
+		left: 0px
+		z-index: 20
+		display: flex
+		width: 100vw
+		height: 3rem
+		background: $firma-1
+		justify-content: space-around
+		flex-direction: row
+		align-items: center
+
+		div
+			background: transparent
+			font-weight: 700
+			font-size: 120%
 	header
 		position: fixed
+		margin-top: 3rem
 		display: flex
 		justify-content: space-between
 		align-items: center
@@ -30,9 +48,8 @@ $breakpoint: 992px
 		width: 100%
 		z-index: 20
 		box-shadow: 0 0 black
-		border-top: 3rem solid $firma-1
+		//border-top: 3rem solid $firma-1
 		border-bottom: .2rem solid $firma-1	
-			
 
 		.logo
 			margin: 0 0 0 0
