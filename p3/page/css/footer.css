@@ -32,7 +32,8 @@ footer {
         opacity: 1;
         bottom: 8px; }
       footer .nav__links li a {
-        transition: all 0.3s ease 0s; }
+        transition: all 0.3s ease 0s;
+        text-decoration: none; }
   footer button {
     padding: 9px 25px;
     background-color: #FCB209;
