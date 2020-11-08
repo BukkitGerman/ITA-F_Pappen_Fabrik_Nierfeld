@@ -32,11 +32,12 @@ body {
   height: 120vh;
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
-  background: #cccccc; }
+  background: #aaaaaa; }
   body .wrapper {
     position: fixed;
     display: flex;
     margin: auto auto auto auto;
+    box-shadow: 1px 0 20px rgba(0, 0, 0, 0.3), -1px 0 20px rgba(0, 0, 0, 0.3);
     left: 10vw;
     width: 80vw;
     justify-content: center;
