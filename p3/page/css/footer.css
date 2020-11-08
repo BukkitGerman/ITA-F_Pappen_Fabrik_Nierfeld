@@ -2,15 +2,15 @@ footer, .push {
   height: 70px; }
 
 footer {
-  position: sticky;
-  top: 100%;
+  position: relative;
+  bottom: 0px;
   margin: auto;
   display: flex;
   width: 80vw;
   justify-content: space-between;
   align-items: center;
   padding: 5px 5%;
-  background: transparent; }
+  background: #f9f9f9; }
   footer .nav__links {
     list-style: none; }
     footer .nav__links li {
