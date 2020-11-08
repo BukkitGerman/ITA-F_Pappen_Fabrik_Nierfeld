@@ -31,18 +31,21 @@
 body {
   height: 120vh;
   font-size: 62.5%;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  background: #cccccc; }
   body .wrapper {
+    position: fixed;
     display: flex;
-    margin: auto;
+    margin: auto auto auto auto;
+    left: 10vw;
+    width: 80vw;
     justify-content: center;
     min-height: 100%;
     margin-bottom: -5rem;
     color: #232323; }
     body .wrapper .content {
-      margin: 11.5rem 6rem 10rem 6rem;
-      min-width: 80vw;
-      max-width: 80vw;
+      margin: 12rem auto 10rem auto;
+      width: 70vw;
       font-size: 0.9rem; }
 
 .link__form {

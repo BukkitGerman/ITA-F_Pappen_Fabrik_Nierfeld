@@ -1,12 +1,16 @@
 footer, .push {
-  height: 50px; }
+  height: 70px; }
 
 footer {
+  position: sticky;
+  top: 100%;
+  margin: auto;
   display: flex;
+  width: 80vw;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10%;
-  width: 100%; }
+  padding: 5px 5%;
+  background: transparent; }
   footer .nav__links {
     list-style: none; }
     footer .nav__links li {
