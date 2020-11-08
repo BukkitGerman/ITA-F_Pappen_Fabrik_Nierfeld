@@ -52,7 +52,9 @@
   .timeline::before {
     content: "";
     position: absolute;
-    height: 100%;
+    margin: auto;
+    top: -3rem;
+    height: 4%;
     width: 3px;
     left: 50%;
     background-color: #232323; }

@@ -17,6 +17,7 @@ include '../../template/footer.php';
 echo file_get_contents("../../template/header.html");
 ?>
 <script type="text/javascript" src="../../js/main.js"></script>
+<script type="text/javascript" src="../../js/timeline.js"></script>
 <div class="wrapper">
 	<div class="content">
 		<?php
@@ -24,7 +25,7 @@ echo file_get_contents("../../template/header.html");
 
 			if ($handle = opendir('../../content/historie')) {
 
-				echo "<div class='timeline'><ul>";
+				echo "<div class='timeline'><ul id='tl'>";
 				$files = array();
 
 			    while (false !== ($entries_[] = readdir($handle)));
