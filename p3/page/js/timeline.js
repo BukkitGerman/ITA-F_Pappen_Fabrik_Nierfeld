@@ -31,11 +31,11 @@ window.addEventListener('load', () => {
 	window.addEventListener('scroll', () => {
 		last_known_scroll_position = window.scrollY
 		let position = (last_known_scroll_position*1.3)
-		div.pseudoStyle("before", "max-height", ((last_known_scroll_position*1.3)+70)+"px");
+		div.pseudoStyle("before", "max-height", ((last_known_scroll_position*1.3)+80)+"px");
 		if((point.getBoundingClientRect().y) <= (document.body.scrollHeight*0.9)){
 			div.pseudoStyle("before", "height", "101%");
 		}else{
-			div.pseudoStyle("before", "height", (position+70)+"px");
+			div.pseudoStyle("before", "height", (position+80)+"px");
 			console.log(document.body.scrollHeight)
 			console.log(window.getComputedStyle(document.querySelector('.timeline'), ':before').getPropertyValue('height'))
 		}
