@@ -54,6 +54,7 @@
     position: absolute;
     margin: auto;
     top: -3rem;
+    min-height: 4%;
     height: 4%;
     width: 3px;
     left: 50%;
