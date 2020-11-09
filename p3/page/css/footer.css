@@ -3,7 +3,7 @@ footer, .push {
 
 footer {
   position: relative;
-  bottom: 0px;
+  bottom: 30vh;
   margin: auto;
   display: flex;
   width: 80vw;

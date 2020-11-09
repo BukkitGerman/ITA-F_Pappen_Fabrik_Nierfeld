@@ -17,7 +17,7 @@ echo "
 	}else{
 		echo "<a class='log link' name='admin' href='/p/dashboard/'><button>Dashboard</button></a>";
 	}
-	echo "
+	/*echo "
 </footer>
 <form method='GET' class='link__form' id='produkte' action='/'><input type='hidden' name='p' value='produkte'/></form>
 <form method='GET' class='link__form' id='philosophie' action='/'><input type='hidden' name='p' value='philosophie'/></form>
@@ -28,5 +28,5 @@ echo "
 <form method='GET' class='link__form' id='datenschutz' action='/'><input type='hidden' name='p' value='datenschutz'/></form>
 <form method='GET' class='link__form' id='kontakt' action='/'><input type='hidden' name='p' value='kontakt'/></form>
 <form method='GET' class='link__form' id='login' action='page/login.php'><input type='hidden' name='p' value='login'/></form>";
-
+*/
 }

@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
 		let position = (last_known_scroll_position*1.3)
 		div.pseudoStyle("before", "max-height", ((last_known_scroll_position*1.3)+80)+"px");
 		if((point.getBoundingClientRect().y) <= (document.body.scrollHeight*0.9)){
-			div.pseudoStyle("before", "height", "101%");
+			div.pseudoStyle("before", "height", "104%");
 		}else{
 			div.pseudoStyle("before", "height", (position+80)+"px");
 			console.log(document.body.scrollHeight)

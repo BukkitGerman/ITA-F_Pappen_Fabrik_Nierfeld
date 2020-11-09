@@ -40,10 +40,12 @@ html {
     display: flex;
     margin: auto auto auto auto;
     box-shadow: 1px 0 20px rgba(0, 0, 0, 0.3), -1px 0 20px rgba(0, 0, 0, 0.3);
+    top: -30vh;
+    padding-top: 10rem;
     width: 80vw;
     justify-content: center;
-    min-height: 110vh;
-    height: auto;
+    min-height: 115vh;
+    height: auto15vh;
     margin-bottom: -5rem;
     color: #232323; }
     html .wrapper .content {
