@@ -9,7 +9,6 @@ include '../../template/footer.php';
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
-	<link rel="stylesheet" type="text/css" href="../../css/login.css">
 	<link rel="stylesheet" type="text/css" href="../../css/timeline.css">
 </head>
 <body>
