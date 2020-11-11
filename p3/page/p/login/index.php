@@ -42,7 +42,9 @@ include '../../template/footer.php';
 			<script type="text/javascript" src="../js/login.js"></script>
 			<?php
 			if(isset($_SESSION['uid'])){
-				echo "Logged in!";
+				?>
+				<meta http-equiv="refresh" content="0; URL=http://localhost:1337/p/dashboard/">
+				<?php
 			}else{
 			?>
 			<div class='login'>

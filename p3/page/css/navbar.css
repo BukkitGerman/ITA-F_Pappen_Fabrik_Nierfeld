@@ -2,8 +2,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9; }
+  padding: 0; }
 
 @media (min-width: 992px) {
   li, a, button {
@@ -19,7 +18,7 @@
     width: 80vw;
     z-index: 20;
     display: flex;
-    height: 7vh;
+    height: 3rem;
     background: #FCB209;
     justify-content: space-around;
     flex-direction: row;
@@ -27,24 +26,25 @@
     .border div {
       background: transparent;
       font-weight: 700;
-      font-size: 1.6vh; }
+      font-size: 0.8rem; }
 
   header {
     position: sticky;
     margin: auto auto auto auto;
-    top: 7vh;
+    top: 3rem;
     width: 80vw;
     display: flex;
-    height: 15.7vh;
+    height: 8rem;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10%;
     z-index: 20;
-    border-bottom: 0.2rem solid #FCB209; }
+    border-bottom: 0.2rem solid #FCB209;
+    background: #f9f9f9; }
     header .logo {
       margin: 0 0 0 0;
       cursor: pointer;
-      width: 20vh; }
+      width: 10rem; }
     header .nav__links {
       list-style: none; }
       header .nav__links li {

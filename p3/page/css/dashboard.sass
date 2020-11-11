@@ -1,0 +1,76 @@
+$primary: #232323
+$secondary: #F6ECF0
+$firma-1: #FCB209
+$firma-2: #D8991F
+$firma-3: #4E421F
+$grun: #5c8450
+$bgcolor: #f9f9f9
+
+
+@keyframes fade 
+	0%
+		background: #4E421F
+	50%
+		background: #FCB209
+	100%
+		background: #4E421F
+
+
+.wrapper
+	.content
+		display: flex !important
+		flex-direction: row
+		.editable
+			form
+				display: flex
+				flex-direction: column
+				justify-content: center
+
+				textarea
+					width: 45vw
+					height: 65vh
+					margin: auto auto auto 5vw
+
+				input[type="submit"]
+					width: 20%
+					margin: .7rem auto auto auto
+				
+
+	.sidebar
+		margin: 1rem none 
+		width: 20vw
+		height: 70vh
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+
+		.point
+			width: 12px
+			height: 12px
+			background-color: $firma-3
+			border-radius: 100%
+			z-index: 2
+			border: 1px $primary solid
+
+		.inner
+			display: flex
+			flex-direction: column
+
+
+			div
+				display: flex
+				flex-direction: row
+				align-items: baseline
+				justify-content: flex-start
+				margin-right: 1rem
+
+			a
+				margin-top: .2rem
+				margin-bottom: .2rem
+				text-decoration: none
+
+			#logout
+				margin-bottom: .6rem
+
+

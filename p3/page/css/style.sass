@@ -6,6 +6,7 @@ $firma-1: #FCB209
 $firma-2: #D8991F
 $firma-3: #4E421F
 $grun: #5c8450
+$bgcolor: #f9f9f9
 
 #slides
 	position: relative
@@ -21,6 +22,8 @@ $grun: #5c8450
 	box-shadow: 1px 0 20px rgba(0, 0, 0, 0.3), -1px 0 20px rgba(0, 0, 0, 0.3)
 	width: 80vw
 	margin: auto auto auto auto
+	min-height: 110vh
+	background: $bgcolor
 
 .slide
 	position: absolute
@@ -55,18 +58,15 @@ html
 
 
 	.wrapper
-		position: relative
 		display: flex
 		margin: auto auto auto auto
-		top: -23vh
-		padding-top: 5vh
+		padding-top: 2rem
 		justify-content: center
-		height: auto
+		height: 100%
 		margin-bottom: -5rem
 		color: $primary
 		.content
-			position: relative
-			margin: 20vh auto 10rem auto
+			margin: auto auto auto auto
 			width: 70vw
 			height: 100%
 			font-size: 0.9rem

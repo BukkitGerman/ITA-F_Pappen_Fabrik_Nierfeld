@@ -2,16 +2,19 @@ footer, .push {
   height: 70px; }
 
 footer {
-  position: relative;
-  margin: auto;
+  position: sticky;
+  top: 100%;
+  margin: 5rem auto auto auto;
   display: flex;
   width: 80vw;
   justify-content: space-between;
   align-items: center;
   padding: 5px 5%;
-  background: #f9f9f9; }
+  box-shadow: 0px 0 5px rgba(0, 0, 0, 0.3), -1px 0 5px rgba(0, 0, 0, 0.3);
+  background: #e9e9e9; }
   footer .nav__links {
-    list-style: none; }
+    list-style: none;
+    background: transparent; }
     footer .nav__links li {
       display: inline-block;
       position: relative;
@@ -20,7 +23,8 @@ footer {
       text-align: center;
       order: 3;
       padding: 15px 0;
-      cursor: pointer; }
+      cursor: pointer;
+      background: transparent; }
       footer .nav__links li:after {
         position: absolute;
         content: "";

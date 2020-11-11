@@ -1,0 +1,46 @@
+.wrapper .content {
+  display: flex !important;
+  flex-direction: row; }
+  .wrapper .content .editable form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .wrapper .content .editable form textarea {
+      width: 45vw;
+      height: 65vh;
+      margin: auto auto auto 5vw; }
+    .wrapper .content .editable form input[type="submit"] {
+      width: 20%;
+      margin: 0.7rem auto auto auto; }
+.wrapper .sidebar {
+  margin: 1rem none;
+  width: 20vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .wrapper .sidebar .point {
+    width: 12px;
+    height: 12px;
+    background-color: #4E421F;
+    border-radius: 100%;
+    z-index: 2;
+    border: 1px #232323 solid; }
+  .wrapper .sidebar .inner {
+    display: flex;
+    flex-direction: column; }
+    .wrapper .sidebar .inner div {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: flex-start;
+      margin-right: 1rem; }
+    .wrapper .sidebar .inner a {
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      text-decoration: none; }
+    .wrapper .sidebar .inner #logout {
+      margin-bottom: 0.6rem; }
+
+/*# sourceMappingURL=dashboard.css.map */
