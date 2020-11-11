@@ -12,6 +12,7 @@ include '../../template/footer.php';
 	<link rel="stylesheet" type="text/css" href="../../css/team.css">
 </head>
 <body>
+<div class="box">
 <?php
 echo file_get_contents("../../template/header.html");
 echo file_get_contents("../../img/copy.html");
@@ -32,5 +33,6 @@ echo file_get_contents("../../img/copy.html");
 <?php
 	echo showFooter	("../template/footer.php");
 ?>
+</div>
 </body>
 </html>

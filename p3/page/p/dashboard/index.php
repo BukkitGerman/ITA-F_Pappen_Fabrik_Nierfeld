@@ -21,7 +21,7 @@ include '../../template/footer.php';
 		<div class="content">
 			<?php
 				$Parsedown = new Parsedown();
-				echo $Parsedown->text(file_get_contents("../../content/home.md"));
+				echo $Parsedown->text(file_get_contents("../../content/dashboard.md"));
 			 ?>
 		</div>
 		<div class="push"></div>

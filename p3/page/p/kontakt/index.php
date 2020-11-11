@@ -11,6 +11,7 @@ include '../../template/footer.php';
 	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
 </head>
 <body>
+<div class="box">
 <?php
 echo file_get_contents("../../template/header.html");
 ?>
@@ -27,5 +28,6 @@ echo file_get_contents("../../template/header.html");
 <?php
 	echo showFooter	("../template/footer.php");
 ?>
+</div>
 </body>
 </html>
