@@ -55,7 +55,6 @@ include '../../template/footer.php';
 						}
 
 						foreach ($sites as $key => $value) {
-							echo "SITES => ".$value."<br>";
 							if(strtolower($_GET['edit']) === strtolower($value)){
 							?>
 							<form method="POST" action="../../../server/changeContent.php">
