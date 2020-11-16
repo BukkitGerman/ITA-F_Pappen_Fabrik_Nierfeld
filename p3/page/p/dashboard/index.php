@@ -23,11 +23,11 @@ include '../../template/footer.php';
 		<div class="content">
 			<div class="sidebar">
 				<div class="inner">
-					<div><div class="point home"></div><a class="li home" href="?edit=home">HOME</a></div>
-					<div><div class="point produkte"></div><a class="li produkte" href="?edit=produkte">PRODUKTE</a></div>
-					<div><div class="point philosohpie"></div><a class="li philosohpie" href="?edit=philosohpie">PHILOSOPHIE</a></div>
-					<div><div class="point historie"></div><a class="li historie" href="?edit=historie">HISTORIE</a></div>
-					<div><div class="point team"></div><a class="li team" href="?edit=team">TEAM</a></div>
+					<div><div class="point home"></div><a class="li ed home" href="?edit=home">HOME</a></div>
+					<div><div class="point produkte"></div><a class="li ed produkte" href="?edit=produkte">PRODUKTE</a></div>
+					<div><div class="point philosohpie"></div><a class="li ed philosohpie" href="?edit=philosophie">PHILOSOPHIE</a></div>
+					<div><div class="point historie"></div><a class="li ed historie" href="?edit=historie">HISTORIE</a></div>
+					<div><div class="point team"></div><a class="li ed team" href="?edit=team">TEAM</a></div>
 					<div><div class="point logout"></div><a class="li logout" id="logout" href="logout.php">LOGOUT</a></div>
 				</div>
 			</div>
@@ -38,6 +38,35 @@ include '../../template/footer.php';
 						?>
 						<script type="text/javascript" src="../../js/contentManager.js"></script>
 						<?php
+						$sites = array();
+						if ($handle = opendir('../../content')) {
+							while (false !== ($entries_[] = readdir($handle)));
+							sort($entries_);
+			    			$entries = array_reverse($entries_);
+							
+							foreach($entries as $entry) {
+								if($entry !== "." && $entry !== ".." && $entry !== "historie"){
+									$site = substr($entry, 0, -3);
+									array_push($sites, $site);
+									
+								}
+							}
+							array_pop($sites);
+						}
+
+						foreach ($sites as $key => $value) {
+							echo "SITES => ".$value."<br>";
+							if(strtolower($_GET['edit']) === strtolower($value)){
+							?>
+							<form method="POST" action="../../../server/changeContent.php">
+								<input type="hidden" name="file" value=<?php echo $value ?>>
+								<textarea class='edit' name=<?php echo $value ?> id=<?php echo $value ?>></textarea>
+								<input type="submit" name="aendern" value="Ändern">
+							</form>
+							<?php
+							}
+						}
+						/*
 						if($_GET['edit'] === 'home'){
 							?>
 							<form method="POST" action="../../../server/changeContent.php">
@@ -46,7 +75,15 @@ include '../../template/footer.php';
 								<input type="submit" name="aendern" value="Ändern">
 							</form>
 							<?php
-						}
+						} elseif ($_GET['edit'] === 'produkte') {
+							?>
+							<form method="POST" action="../../../server/changeContent.php">
+								<input type="hidden" name="file" value="produkte">
+								<textarea class='edit' name='produkte' id='produkte'></textarea>
+								<input type="submit" name="aendern" value="Ändern">
+							</form>
+							<?php
+						} */
 					}
 				}else{
 			?>
