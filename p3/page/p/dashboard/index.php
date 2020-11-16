@@ -65,24 +65,6 @@ include '../../template/footer.php';
 							<?php
 							}
 						}
-						/*
-						if($_GET['edit'] === 'home'){
-							?>
-							<form method="POST" action="../../../server/changeContent.php">
-								<input type="hidden" name="file" value="home">
-								<textarea class='edit' name='home' id='home'></textarea>
-								<input type="submit" name="aendern" value="Ändern">
-							</form>
-							<?php
-						} elseif ($_GET['edit'] === 'produkte') {
-							?>
-							<form method="POST" action="../../../server/changeContent.php">
-								<input type="hidden" name="file" value="produkte">
-								<textarea class='edit' name='produkte' id='produkte'></textarea>
-								<input type="submit" name="aendern" value="Ändern">
-							</form>
-							<?php
-						} */
 					}
 				}else{
 			?>
