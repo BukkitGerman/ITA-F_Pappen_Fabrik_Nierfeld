@@ -68,8 +68,32 @@ include '../../template/footer.php';
 
 						if(strtolower($_GET['edit']) === strtolower("historie")) {
 								//Thinking about a solution!
+								if ($h_handle = opendir('../../content/historie')) {
+									while (false !== ($h_entries_[] = readdir($h_handle)));
+									sort($h_entries_);
+			    					$h_entries = array_reverse($h_entries_);
+						
 								?>
-									<p>Test</p>
+									<select id="historie_entry">
+										<?php
+										array_pop($h_entries);
+										foreach($h_entries as $h_entry) {
+											if($h_entry !== "." && $h_entry !== ".." && $h_entry){
+												?>
+													<option value=<?php echo $h_entry ?>><?php echo substr($h_entry, 0 ,-3) ?></option>
+												<?php		
+											}
+										}
+										?>
+									</select>
+									<?php
+								}
+								?>
+									<form method="POST" action="../../../server/changeContent.php">
+										<input type="hidden" name="file" value=<?php echo $v ?>>
+										<textarea class='edit' name=<?php echo $value ?> id=<?php echo $value ?>></textarea>
+										<input type="submit" name="aendern" value="Ändern">
+									</form>
 								<?php
 							}
 
