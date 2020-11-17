@@ -65,6 +65,15 @@ include '../../template/footer.php';
 							<?php
 							}
 						}
+
+						if(strtolower($_GET['edit']) === strtolower("historie")) {
+								//Thinking about a solution!
+								?>
+									<p>Test</p>
+								<?php
+							}
+
+
 					}
 				}else{
 			?>
