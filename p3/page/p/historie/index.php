@@ -31,7 +31,7 @@ echo file_get_contents("../../template/header.html");
 			    while (false !== ($entries_[] = readdir($handle)));
 			    	sort($entries_);
 			    	$entries = array_reverse($entries_);
-
+			    	array_pop($entries);
 			    	foreach($entries as $entry) {
 			    	
 				    	if($entry !== "." && $entry !== ".."){

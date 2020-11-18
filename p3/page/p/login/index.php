@@ -58,7 +58,7 @@ include '../../template/footer.php';
 					<div class='password'><input id='pwd' name='pwd' placeholder='Password' type='password' required></div>
 					<div class='submit'><input id='submit' name='submit' type='submit' value='Login'></div>
 				</form>
-				<p><?php echo $errorMessage ?></p>
+				<p></p>
 			</div>
 			<?php
 			}

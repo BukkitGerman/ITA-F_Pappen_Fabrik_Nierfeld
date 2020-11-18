@@ -90,8 +90,8 @@ include '../../template/footer.php';
 								}
 								?>
 									<form method="POST" action="../../../server/changeContent.php">
-										<input type="hidden" name="file" value=<?php echo $v ?>>
-										<textarea class='edit' name=<?php echo $value ?> id=<?php echo $value ?>></textarea>
+										<input type="hidden" name="file" value="">
+										<textarea class='edit' name="" id=""></textarea>
 										<input type="submit" name="aendern" value="Ändern">
 									</form>
 								<?php
