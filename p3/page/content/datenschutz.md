@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# Datenschutz ist Wichtig
-
-test
-=======
 # Datenschutzerklärung
 
 Wir haben diese Datenschutzerklärung (Fassung 18.11.2020-311232398) verfasst, um Ihnen gemäß der Vorgaben der Datenschutz-Grundverordnung (EU) 2016/679 zu erklären, welche Informationen wir sammeln, wie wir Daten verwenden und welche Entscheidungsmöglichkeiten Sie als Besucher dieser Webseite haben.
