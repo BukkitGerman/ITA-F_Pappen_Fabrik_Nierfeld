@@ -28,6 +28,9 @@ include '../../template/footer.php';
 					<div><div class="point philosohpie"></div><a class="li ed philosohpie" href="?edit=philosophie">PHILOSOPHIE</a></div>
 					<div><div class="point historie"></div><a class="li ed historie" href="?edit=historie">HISTORIE</a></div>
 					<div><div class="point team"></div><a class="li ed team" href="?edit=team">TEAM</a></div>
+					<div><div class="point agb"></div><a class="li ed agb" href="?edit=agb">AGB</a></div>
+					<div><div class="point impressum"></div><a class="li ed impressum" href="?edit=impressum">IMPRESSUM</a></div>
+					<div><div class="point datenschutz"></div><a class="li ed datenschutz" href="?edit=datenschutz">DATENSCHUTZ</a></div>
 					<div><div class="point logout"></div><a class="li logout" id="logout" href="logout.php">LOGOUT</a></div>
 				</div>
 			</div>
@@ -55,7 +58,7 @@ include '../../template/footer.php';
 						}
 
 						foreach ($sites as $key => $value) {
-							if(strtolower($_GET['edit']) === strtolower($value)){
+							if(strtolower($_GET['edit']) === strtolower($value) && strtolower($value) != "historie"){
 							?>
 							<form method="POST" action="../../../server/changeContent.php">
 								<input type="hidden" name="file" value=<?php echo $value ?>>
@@ -89,9 +92,9 @@ include '../../template/footer.php';
 									<?php
 								}
 								?>
-									<form method="POST" action="../../../server/changeContent.php">
-										<input type="hidden" name="file" value="">
-										<textarea class='edit' name="" id=""></textarea>
+									<form method="POST" action="../../../server/changeContentHistorie.php">
+										<input type="hidden" class='gett' name="file" value="">
+										<textarea class='edit' name=""></textarea>
 										<input type="submit" name="aendern" value="Ändern">
 									</form>
 								<?php

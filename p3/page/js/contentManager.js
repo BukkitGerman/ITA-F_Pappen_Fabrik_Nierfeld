@@ -10,11 +10,18 @@ window.addEventListener('load', () => {
 	}
 
 	if(sel != null){
+		let g = document.querySelector('.gett');
 		sel.addEventListener('change', () => {
 			console.log(sel.id)
 		 	fetch('http://localhost:1337/content/historie/' + sel.value)
 		 	.then(response => response.text())
-			.then(data => textarea.innerHTML = data)
+			.then(data => {
+				console.log(g)
+				textarea.innerHTML = data
+				let v = sel.value
+				textarea.name = v.substring(0, v.length-3);
+				g.value = v.substring(0, v.length-3);
+			})
 		})
 	}
 })
