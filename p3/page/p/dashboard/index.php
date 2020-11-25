@@ -115,8 +115,7 @@ include '../../template/footer.php';
 			<?php
 				}
 			?>
-				</div>
-			</div>
+		</div>
 		</div>
 		<div class="push"></div>
 	</div>

@@ -7,7 +7,8 @@
     background: #4E421F; } }
 .wrapper .content {
   display: flex !important;
-  flex-direction: row; }
+  flex-direction: row;
+  height: 100%; }
   .wrapper .content .editable {
     width: 80vw; }
     .wrapper .content .editable #editor {
