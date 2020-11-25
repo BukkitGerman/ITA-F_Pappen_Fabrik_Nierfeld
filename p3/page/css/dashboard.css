@@ -1,20 +1,45 @@
+@keyframes fade {
+  0% {
+    background: #4E421F; }
+  50% {
+    background: #FCB209; }
+  100% {
+    background: #4E421F; } }
 .wrapper .content {
   display: flex !important;
   flex-direction: row; }
-  .wrapper .content .editable form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .wrapper .content .editable form textarea {
-      width: 45vw;
+  .wrapper .content .editable {
+    width: 80vw; }
+    .wrapper .content .editable #editor {
+      display: flex;
+      flex-direction: row;
+      width: auto;
       height: 65vh;
-      margin: auto auto auto 5vw; }
-    .wrapper .content .editable form input[type="submit"] {
-      width: 20%;
-      margin: 0.7rem auto auto auto; }
+      margin: auto auto auto auto;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #333; }
+    .wrapper .content .editable #compiledMarkdown {
+      overflow-x: hidden;
+      overflow-y: auto;
+      width: 30vw;
+      height: 65vh;
+      margin: auto auto auto 1rem; }
+      .wrapper .content .editable #compiledMarkdown img {
+        width: 10rem; }
+    .wrapper .content .editable form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .wrapper .content .editable form textarea {
+        width: 30vw;
+        height: 65vh;
+        margin: auto 1rem auto auto; }
+      .wrapper .content .editable form input[type="submit"] {
+        width: 20%;
+        margin: 0.7rem auto auto auto; }
 .wrapper .sidebar {
   margin: 1rem none;
-  width: 20vw;
+  width: 15vw;
   height: 70vh;
   display: flex;
   flex-direction: column;

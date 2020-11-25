@@ -10,6 +10,7 @@ include '../../template/footer.php';
 	<link rel="stylesheet" type="text/css" href="../../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../../css/dashboard.css">
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 <div class="box">
@@ -62,7 +63,10 @@ include '../../template/footer.php';
 							?>
 							<form method="POST" action="../../../server/changeContent.php">
 								<input type="hidden" name="file" value=<?php echo $value ?>>
-								<textarea class='edit' name=<?php echo $value ?> id=<?php echo $value ?>></textarea>
+								<div id="editor">
+									<textarea class='edit' name=<?php echo $value ?> id=<?php echo $value ?>></textarea>
+									<div id="compiledMarkdown"></div>
+								</div>
 								<input type="submit" name="aendern" value="Ändern">
 							</form>
 							<?php
@@ -94,7 +98,10 @@ include '../../template/footer.php';
 								?>
 									<form method="POST" action="../../../server/changeContentHistorie.php">
 										<input type="hidden" class='gett' name="file" value="">
-										<textarea class='edit' name=""></textarea>
+										<div id="editor">
+											<textarea class='edit' name=""></textarea>
+											<div v-id="compiledMarkdown"></div>
+										</div>
 										<input type="submit" name="aendern" value="Ändern">
 									</form>
 								<?php
@@ -108,6 +115,7 @@ include '../../template/footer.php';
 			<?php
 				}
 			?>
+				</div>
 			</div>
 		</div>
 		<div class="push"></div>
@@ -116,5 +124,6 @@ include '../../template/footer.php';
 		echo showFooter	("../template/footer.php");
 	?>
 </div>
+<script type="text/javascript" src="../../js/prev.js"></script>
 </body>
 </html>

@@ -16,20 +16,39 @@ $bgcolor: #f9f9f9
 		background: #4E421F
 
 
+
+
 .wrapper
 	.content
 		display: flex !important
 		flex-direction: row
 		.editable
+			width: 80vw
+			#editor 
+				display: flex
+				flex-direction: row
+				width: auto
+				height: 65vh
+				margin: auto auto auto auto
+				font-family: "Helvetica Neue", Arial, sans-serif
+				color: #333
+			#compiledMarkdown
+				overflow-x: hidden
+				overflow-y: auto
+				width: 30vw
+				height: 65vh
+				margin: auto auto auto 1rem
+				img
+					width: 10rem
 			form
 				display: flex
 				flex-direction: column
 				justify-content: center
 
 				textarea
-					width: 45vw
+					width: 30vw
 					height: 65vh
-					margin: auto auto auto 5vw
+					margin: auto 1rem auto auto
 
 				input[type="submit"]
 					width: 20%
@@ -38,7 +57,7 @@ $bgcolor: #f9f9f9
 
 	.sidebar
 		margin: 1rem none 
-		width: 20vw
+		width: 15vw
 		height: 70vh
 		display: flex
 		flex-direction: column
