@@ -7,8 +7,13 @@
     background: #4E421F; } }
 .wrapper .content {
   display: flex !important;
-  flex-direction: row;
-  height: 100%; }
+  flex-direction: row; }
+  .wrapper .content #selection {
+    margin: auto auto 1rem auto;
+    display: flex;
+    flex-direction: row; }
+    .wrapper .content #selection div .ninp {
+      padding-left: 10px; }
   .wrapper .content .editable {
     width: 80vw; }
     .wrapper .content .editable #editor {
@@ -35,9 +40,14 @@
         width: 30vw;
         height: 65vh;
         margin: auto 1rem auto auto; }
-      .wrapper .content .editable form input[type="submit"] {
-        width: 20%;
-        margin: 0.7rem auto auto auto; }
+      .wrapper .content .editable form .btnBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start; }
+        .wrapper .content .editable form .btnBox input {
+          width: 20%;
+          margin: 0.7rem auto auto auto; }
 .wrapper .sidebar {
   margin: 1rem none;
   width: 15vw;

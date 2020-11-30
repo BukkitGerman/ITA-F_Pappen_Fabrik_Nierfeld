@@ -67,7 +67,9 @@ include '../../template/footer.php';
 									<textarea class='edit' name=<?php echo $value ?> id=<?php echo $value ?>></textarea>
 									<div id="compiledMarkdown"></div>
 								</div>
-								<input type="submit" name="aendern" value="Ändern">
+								<div class="btnBox">
+									<input type="submit" name="aendern" value="Ändern">
+								</div>
 							</form>
 							<?php
 							}
@@ -81,28 +83,40 @@ include '../../template/footer.php';
 			    					$h_entries = array_reverse($h_entries_);
 						
 								?>
-									<select id="historie_entry">
-										<?php
-										array_pop($h_entries);
-										foreach($h_entries as $h_entry) {
-											if($h_entry !== "." && $h_entry !== ".." && $h_entry){
-												?>
-													<option value=<?php echo $h_entry ?>><?php echo substr($h_entry, 0 ,-3) ?></option>
-												<?php		
+									<form method="POST" action="../../../server/changeContentHistorie.php">
+									<div id=selection>
+										<select id="historie_entry">
+											<option value="t">Eintrag auswählen</option>
+											<option value="new">Neuer Eintrag</option>
+											<?php
+											array_pop($h_entries);
+											foreach($h_entries as $h_entry) {
+												if($h_entry !== "." && $h_entry !== ".."){
+													?>
+														<option value=<?php echo $h_entry ?>><?php echo substr($h_entry, 0 ,-3) ?></option>
+													<?php
+												}
 											}
-										}
-										?>
-									</select>
+											?>
+										</select>
+										<div class="ninp">
+											<label class="ninp">Datum eintragen (Jahr)
+											<input class="ninp" type="number" name="en" minlength="4" maxlength="4" min="1900">
+											</label>
+										</div>
+									</div>
 									<?php
 								}
 								?>
-									<form method="POST" action="../../../server/changeContentHistorie.php">
 										<input type="hidden" class='gett' name="file" value="">
 										<div id="editor">
 											<textarea class='edit' name=""></textarea>
-											<div v-id="compiledMarkdown"></div>
+											<div id="compiledMarkdown"></div>
 										</div>
-										<input type="submit" name="aendern" value="Ändern">
+										<div class="btnBox">
+											<input type="submit" name="aendern" value="Ändern">
+											<input class="remove" type="submit" name="remove" value="Löschen"/>
+										</div>
 									</form>
 								<?php
 							}
@@ -123,6 +137,5 @@ include '../../template/footer.php';
 		echo showFooter	("../template/footer.php");
 	?>
 </div>
-<script type="text/javascript" src="../../js/prev.js"></script>
 </body>
 </html>

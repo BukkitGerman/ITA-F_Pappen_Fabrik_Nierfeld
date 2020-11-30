@@ -9,6 +9,7 @@ include '../../template/footer.php';
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../../css/footer.css">
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 <div class="box">

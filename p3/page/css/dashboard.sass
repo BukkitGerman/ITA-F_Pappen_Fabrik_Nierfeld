@@ -22,6 +22,15 @@ $bgcolor: #f9f9f9
 	.content
 		display: flex !important
 		flex-direction: row
+		#selection
+			margin: auto auto 1rem auto
+			display: flex
+			flex-direction: row 
+
+			div
+				.ninp
+					padding-left: 10px
+
 		.editable
 			width: 80vw
 			#editor 
@@ -49,11 +58,16 @@ $bgcolor: #f9f9f9
 					width: 30vw
 					height: 65vh
 					margin: auto 1rem auto auto
+				.btnBox
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					align-items: flex-start
 
-				input[type="submit"]
-					width: 20%
-					margin: .7rem auto auto auto
-				
+					input
+						width: 20%
+						margin: .7rem auto auto auto
+					
 
 	.sidebar
 		margin: 1rem none 

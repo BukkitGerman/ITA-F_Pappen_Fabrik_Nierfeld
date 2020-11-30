@@ -32,13 +32,13 @@ echo file_get_contents("../../template/header.html");
 			    	sort($entries_);
 			    	$entries = array_reverse($entries_);
 			    	array_pop($entries);
+
 			    	foreach($entries as $entry) {
-			    	
 				    	if($entry !== "." && $entry !== ".."){
-					    	$text = strstr($Parsedown->text(file_get_contents("../../content/historie/$entry")), "\n");
+					    	$text = $Parsedown->text(file_get_contents("../../content/historie/$entry"));
 					    	$head = strstr($text, "</h3>", true);
 					    	$body = strstr($text, "</h3>");
-					    	$datum = strstr($Parsedown->text(file_get_contents("../../content/historie/$entry")), "\n", true);
+					    	$datum = strstr($entry, ".", true); //strstr($Parsedown->text(file_get_contents("../../content/historie/$entry")), "\n", true);
 
 					    	echo "<li><div class='tl_content'>";
 					    	echo $head;
@@ -46,7 +46,7 @@ echo file_get_contents("../../template/header.html");
 					    	echo "</div>";
 					    	echo "<div class='point'></div>";
 					    	echo "<div class='date'>";
-					    	echo $datum;
+					    	echo "<h4>$datum</h4>";
 					    	echo "</div>";
 					    	echo "</li>";
 					    }

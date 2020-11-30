@@ -6,3 +6,4 @@ Testing your Homepage lula
 -asdsad
 
 asdasd asd as das asTest
+![Testnutzer](../../img/logo.png)

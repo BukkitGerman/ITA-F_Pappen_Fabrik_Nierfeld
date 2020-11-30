@@ -191,4 +191,4 @@ Jene Daten, die Google für einen Tag bzw. ein Jahr speichert können nicht einf
 Anders als andere Web-Schriften erlaubt uns Google uneingeschränkten Zugriff auf alle Schriftarten. Wir können also unlimitiert auf ein Meer an Schriftarten zugreifen und so das Optimum für unsere Webseite rausholen. Mehr zu Google Fonts und weiteren Fragen finden Sie auf https://developers.google.com/fonts/faq?tid=311232398. Dort geht zwar Google auf datenschutzrelevante Angelegenheiten ein, doch wirklich detaillierte Informationen über Datenspeicherung sind nicht enthalten. Es ist relativ schwierig, von Google wirklich präzise Informationen über gespeicherten Daten zu bekommen.
 
 Welche Daten grundsätzlich von Google erfasst werden und wofür diese Daten verwendet werden, können Sie auch auf https://www.google.com/intl/de/policies/privacy/ nachlesen.
->>>>>>> b09d615c5817d4797de062f09fec6a2cd9202766
+
