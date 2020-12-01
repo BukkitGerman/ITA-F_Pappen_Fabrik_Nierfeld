@@ -12,7 +12,7 @@ if(isset($_POST['file']) && isset($_SESSION['uid'])){
 		}else{
 			file_put_contents('../content/historie/'.$_POST['file'].'.md', $_POST[$_POST['file']]);
 		}
-	}else{
+	}else if(isset($_POST['remove'])){	
 		unlink('../content/historie/'.$_POST['file'].'.md');
 	}
 }
