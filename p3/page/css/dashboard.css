@@ -20,7 +20,7 @@
       display: flex;
       flex-direction: row;
       width: auto;
-      height: 65vh;
+      height: 55vh;
       margin: auto auto auto auto;
       font-family: "Helvetica Neue", Arial, sans-serif;
       color: #333; }
@@ -28,7 +28,7 @@
       overflow-x: hidden;
       overflow-y: auto;
       width: 30vw;
-      height: 65vh;
+      height: 55vh;
       margin: auto auto auto 1rem; }
       .wrapper .content .editable #compiledMarkdown img {
         width: 10rem; }
@@ -38,7 +38,7 @@
       justify-content: center; }
       .wrapper .content .editable form textarea {
         width: 30vw;
-        height: 65vh;
+        height: 55vh;
         margin: auto 1rem auto auto; }
       .wrapper .content .editable form .btnBox {
         display: flex;
