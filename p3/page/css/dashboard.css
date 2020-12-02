@@ -16,6 +16,9 @@
       padding-left: 10px; }
   .wrapper .content .editable {
     width: 80vw; }
+    .wrapper .content .editable select {
+      color: #232323;
+      width: 100%; }
     .wrapper .content .editable #editor {
       display: flex;
       flex-direction: row;
