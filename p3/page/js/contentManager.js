@@ -21,11 +21,13 @@ window.addEventListener('load', () => {
 	if(sel != null){
 		ninp.style.visibility = "hidden";
 		rm.style.visibility = "hidden";
+		textarea.style.visibility = "visible";
 		let g = document.querySelector('.gett');
 		sel.addEventListener('change', () => {
 			console.log("testing!");
 			if(sel.value != "new" && sel.value != "t"){
 				ninp.style.visibility = "hidden";
+				textarea.style.visibility = "visible";
 				rm.style.visibility = "visible";
 			 	fetch('http://localhost:1337/content/historie/' + sel.value)
 			 	.then(response => response.text())
@@ -39,12 +41,14 @@ window.addEventListener('load', () => {
 				})
 			}else if(sel.value == "new"){
 				ninp.style.visibility = "visible";
+				textarea.style.visibility = "visible";
 				rm.style.visibility = "hidden";
 				textarea.innerHTML = "";
 				textarea.name = "new";
 				compmd.innerHTML = "";
 				g.value = "new";
 			}else if(sel.value == "t"){
+				textarea.style.visibility = "hidden";
 				ninp.style.visibility = "hidden";
 				rm.style.visibility = "hidden";
 			}
