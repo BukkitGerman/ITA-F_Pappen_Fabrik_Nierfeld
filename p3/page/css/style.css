@@ -51,10 +51,30 @@ html {
     margin-bottom: -5rem;
     color: #232323; }
     html .wrapper .content {
-      margin: auto auto auto auto;
+      margin: 0 auto auto auto;
       width: 70vw;
       height: 100%;
       font-size: 0.9rem; }
+    html .wrapper .sbs {
+      display: flex;
+      flex-direction: row; }
+    html .wrapper .main-sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 10px;
+      height: 70vh;
+      width: 15vw;
+      margin: auto 0 auto auto;
+      border-top: 4px solid #D8991F;
+      border-bottom: 4px solid #D8991F; }
+      html .wrapper .main-sidebar .map {
+        align-self: flex-end; }
+        html .wrapper .main-sidebar .map iframe {
+          margin: auto auto auto auto;
+          height: 30vh;
+          width: 14vw; }
 
 .link__form {
   display: none; }

@@ -66,10 +66,31 @@ html
 		margin-bottom: -5rem
 		color: $primary
 		.content
-			margin: auto auto auto auto
+			margin: 0 auto auto auto
 			width: 70vw
 			height: 100%
 			font-size: 0.9rem
+		.sbs
+			display: flex
+			flex-direction: row
+
+		.main-sidebar
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: space-between
+			padding: 10px
+			height: 70vh
+			width: 15vw
+			margin: auto 0 auto auto
+			border-top: 4px solid $firma-2
+			border-bottom: 4px solid $firma-2
+			.map
+				align-self: flex-end
+				iframe
+					margin: auto auto auto auto
+					height: 30vh
+					width: 14vw
 
 
 .link__form

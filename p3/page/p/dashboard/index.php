@@ -25,6 +25,7 @@ include '../../template/footer.php';
 			<div class="sidebar">
 				<div class="inner">
 					<div><div class="point home"></div><a class="li ed home" href="?edit=home">HOME</a></div>
+					<div><div class="point sideb"></div><a class="li ed sideb" href="?edit=sidebar">SIDEBAR</a></div>
 					<div><div class="point produkte"></div><a class="li ed produkte" href="?edit=produkte">PRODUKTE</a></div>
 					<div><div class="point philosohpie"></div><a class="li ed philosohpie" href="?edit=philosophie">PHILOSOPHIE</a></div>
 					<div><div class="point historie"></div><a class="li ed historie" href="?edit=historie">HISTORIE</a></div>
