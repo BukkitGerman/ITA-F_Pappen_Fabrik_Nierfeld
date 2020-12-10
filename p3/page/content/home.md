@@ -6,4 +6,3 @@ Testing your Homepage lula asdasd asd asd asd ad asd as dasd asd asd asd asdasda
 -asdsad
 
 asdasd asd as das asTest
-![Testnutzer](../../img/logo.png)

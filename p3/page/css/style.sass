@@ -73,6 +73,25 @@ html
 		.sbs
 			display: flex
 			flex-direction: row
+		.outer-spo
+			border: 1px solid #000000
+			margin: 10px
+			padding-left: 20px
+			.inner-content
+				display: none
+				background-color: #eee
+			a
+				text-decoration: none
+				font-size: 200%
+				width: 70vw
+			.show
+				display: none
+			.hide:target + .show
+				display: inline
+			.hide:target
+				display: none
+			.hide:target ~ .inner-content
+				display: inline
 
 		.main-sidebar
 			display: flex
@@ -80,7 +99,7 @@ html
 			align-items: flex-start
 			justify-content: space-between
 			padding: 10px
-			height: 70vh
+			height: 65vh
 			width: 15vw
 			margin: auto 0 auto auto
 			border-top: 4px solid $firma-2

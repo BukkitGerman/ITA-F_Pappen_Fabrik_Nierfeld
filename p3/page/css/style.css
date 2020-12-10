@@ -58,13 +58,32 @@ html {
     html .wrapper .sbs {
       display: flex;
       flex-direction: row; }
+    html .wrapper .outer-spo {
+      border: 1px solid #000000;
+      margin: 10px;
+      padding-left: 20px; }
+      html .wrapper .outer-spo .inner-content {
+        display: none;
+        background-color: #eee; }
+      html .wrapper .outer-spo a {
+        text-decoration: none;
+        font-size: 200%;
+        width: 70vw; }
+      html .wrapper .outer-spo .show {
+        display: none; }
+      html .wrapper .outer-spo .hide:target + .show {
+        display: inline; }
+      html .wrapper .outer-spo .hide:target {
+        display: none; }
+      html .wrapper .outer-spo .hide:target ~ .inner-content {
+        display: inline; }
     html .wrapper .main-sidebar {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
       padding: 10px;
-      height: 70vh;
+      height: 65vh;
       width: 15vw;
       margin: auto 0 auto auto;
       border-top: 4px solid #D8991F;

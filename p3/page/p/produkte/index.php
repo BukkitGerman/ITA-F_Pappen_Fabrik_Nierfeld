@@ -22,7 +22,19 @@ echo file_get_contents("../../img/copy.html");
 	<div class="content">
 		<?php
 			$Parsedown = new Parsedown();
-			echo $Parsedown->text(file_get_contents("../../content/produkte.md"));
+			$content = file_get_contents("../../content/produkte.md");
+			$content = explode ("---", $content);
+
+			foreach ($content as $c => $key) {
+				echo "<div class='outer-spo'>";
+				echo "	<a href='#hide".$c."' class='hide btn' id='hide".$c."'>+ ".substr(explode(" ", trim($key))[0], 0, strlen(explode(" ", trim($key))[0])-2)."</a>";
+    			echo "	<a href='#show".$c."' class='show btn' id='show".$c."'>- ".substr(explode(" ", trim($key))[0], 0, strlen(explode(" ", trim($key))[0])-2)."</a>";
+    			echo "	<div class='inner-content'>";
+				echo 		$Parsedown->text($key);
+				echo "	</div>";
+				echo "</div>";
+			}
+			
 		 ?>
 	</div>
 	<div class="push"></div>
