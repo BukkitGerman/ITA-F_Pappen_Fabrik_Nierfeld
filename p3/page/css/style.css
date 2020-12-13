@@ -59,12 +59,17 @@ html {
       display: flex;
       flex-direction: row; }
     html .wrapper .outer-spo {
-      border: 1px solid #000000;
+      border: 1px solid #a9a9a9;
       margin: 10px;
       padding-left: 20px; }
-      html .wrapper .outer-spo .inner-content {
+      html .wrapper .outer-spo hr {
         display: none;
-        background-color: #eee; }
+        margin-left: -20px;
+        height: 0.2rem;
+        background: #FCB209;
+        border: none; }
+      html .wrapper .outer-spo .inner-content {
+        display: none; }
       html .wrapper .outer-spo a {
         text-decoration: none;
         font-size: 200%;
@@ -75,6 +80,8 @@ html {
         display: inline; }
       html .wrapper .outer-spo .hide:target {
         display: none; }
+      html .wrapper .outer-spo .hide:target ~ .line {
+        display: block; }
       html .wrapper .outer-spo .hide:target ~ .inner-content {
         display: inline; }
     html .wrapper .main-sidebar {

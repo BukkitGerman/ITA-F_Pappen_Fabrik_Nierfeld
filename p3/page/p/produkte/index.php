@@ -1,7 +1,9 @@
 <?php
 session_start();
 include '../../server/parsedown-1.7.4/Parsedown.php';
+require '../../server/markdown-extended/src/bootstrap.php';
 include '../../template/footer.php';
+use \MarkdownExtended\MarkdownExtended; 
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,10 +29,11 @@ echo file_get_contents("../../img/copy.html");
 
 			foreach ($content as $c => $key) {
 				echo "<div class='outer-spo'>";
-				echo "	<a href='#hide".$c."' class='hide btn' id='hide".$c."'>+ ".substr(explode(" ", trim($key))[0], 0, strlen(explode(" ", trim($key))[0])-2)."</a>";
-    			echo "	<a href='#show".$c."' class='show btn' id='show".$c."'>- ".substr(explode(" ", trim($key))[0], 0, strlen(explode(" ", trim($key))[0])-2)."</a>";
+				echo "	<a href='#hide".$c."' class='hide btn' id='hide".$c."'>+ ".explode(" ", trim($key))[0]."</a>";
+    			echo "	<a href='#show".$c."' class='show btn' id='show".$c."'>- ".explode(" ", trim($key))[0]."</a>";
+    			echo "<hr class='line'>";
     			echo "	<div class='inner-content'>";
-				echo 		$Parsedown->text($key);
+				echo 		$Parsedown->text($key); //MarkdownExtended::parse($key);
 				echo "	</div>";
 				echo "</div>";
 			}

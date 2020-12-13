@@ -74,12 +74,17 @@ html
 			display: flex
 			flex-direction: row
 		.outer-spo
-			border: 1px solid #000000
+			border: 1px solid #a9a9a9
 			margin: 10px
 			padding-left: 20px
+			hr
+				display: none
+				margin-left: -20px
+				height: .2rem
+				background: $firma-1
+				border: none
 			.inner-content
 				display: none
-				background-color: #eee
 			a
 				text-decoration: none
 				font-size: 200%
@@ -90,6 +95,8 @@ html
 				display: inline
 			.hide:target
 				display: none
+			.hide:target ~ .line
+				display: block
 			.hide:target ~ .inner-content
 				display: inline
 
