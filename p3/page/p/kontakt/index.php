@@ -37,13 +37,16 @@ echo file_get_contents("../../template/header.html");
 <div class="wrapper">
 	<div class="content">
 		<div>
-			<form class="contact" method="post" action="../../p/kontakt/kontakt.php">
+			<form class="contact" method="post" action="../../p/kontakt/index.php">
 				<input type="email" name="email" placeholder="Deine Email Adresse" required>
 				<input type="text" name="name" placeholder="Dein Name" required>
 				<input type="text" name="subject" placeholder="Subject" required>
 				<textarea name="msg" placeholder="Warum möchten sie uns kontaktieren?" required></textarea>
 				<input type="submit">
 			</form>
+			<?php if ($response): ?>
+			<p><?php echo $response; ?></p>
+			<?php endif; ?>
 		</div>
 	</div>
 	<div class="push"></div>
