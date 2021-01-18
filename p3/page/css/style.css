@@ -55,6 +55,46 @@ html {
       width: 70vw;
       height: 100%;
       font-size: 0.9rem; }
+      html .wrapper .content .contact-div {
+        display: flex;
+        justify-content: center; }
+        html .wrapper .content .contact-div .contact {
+          display: flex;
+          flex-direction: column;
+          width: 40%; }
+          html .wrapper .content .contact-div .contact input, html .wrapper .content .contact-div .contact textarea, html .wrapper .content .contact-div .contact select, html .wrapper .content .contact-div .contact p {
+            outline: 0;
+            font-family: Tahoma, Geneva, sans-serif; }
+          html .wrapper .content .contact-div .contact input[type="text"], html .wrapper .content .contact-div .contact input[type="email"] {
+            display: block;
+            margin-top: 15px;
+            padding: 15px;
+            border: 1px solid #dfe0e0;
+            width: 30rem; }
+          html .wrapper .content .contact-div .contact input[type="text"]:focus, html .wrapper .content .contact-div .contact input[type="email"]:focus {
+            border: 1px solid #c6c7c7; }
+          html .wrapper .content .contact-div .contact textarea {
+            resize: none;
+            margin-top: 15px;
+            padding: 15px;
+            border: 1px solid #dfe0e0;
+            width: 30rem;
+            height: 12rem; }
+          html .wrapper .content .contact-div .contact textarea:focus {
+            border: 1px solid #c6c7c7; }
+          html .wrapper .content .contact-div .contact input[type="submit"] {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 0;
+            background-color: #FCB209;
+            font-weight: bold;
+            color: #fff;
+            cursor: pointer;
+            width: 150px; }
+          html .wrapper .content .contact-div .contact input[type="submit"]:hover {
+            background-color: #D8991F; }
     html .wrapper .sbs {
       display: flex;
       flex-direction: row; }

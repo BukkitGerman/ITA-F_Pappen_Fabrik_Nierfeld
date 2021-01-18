@@ -10,7 +10,7 @@ if (isset($_POST['email'], $_POST['subject'], $_POST['name'], $_POST['msg'])) {
 	} else if (empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['name']) || empty($_POST['msg'])) {
 		$response = 'Please complete all fields!';
 	} else {
-		$to      = 'contact@example.com';
+		$to      = 'preussjustin@outlook.de';
 		$from    = $_POST['email'];
 		$subject = $_POST['subject'];
 		$message = $_POST['msg'];
@@ -36,8 +36,9 @@ echo file_get_contents("../../template/header.html");
 <script type="text/javascript" src="../../js/main.js"></script>
 <div class="wrapper">
 	<div class="content">
-		<div>
+		<div class="contact-div">
 			<form class="contact" method="post" action="../../p/kontakt/index.php">
+				<h1>Kontakt</h1>
 				<input type="email" name="email" placeholder="Deine Email Adresse" required>
 				<input type="text" name="name" placeholder="Dein Name" required>
 				<input type="text" name="subject" placeholder="Subject" required>
