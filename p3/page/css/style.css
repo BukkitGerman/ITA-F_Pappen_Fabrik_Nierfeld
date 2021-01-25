@@ -58,6 +58,8 @@ html {
       /* Slideshow container */ }
       html .wrapper .content #con_ {
         margin-bottom: 5rem; }
+      html .wrapper .content p {
+        text-align: justify; }
       html .wrapper .content #slider_dots {
         margin-bottom: 3rem; }
       html .wrapper .content .mySlides {
@@ -180,6 +182,8 @@ html {
         border: none; }
       html .wrapper .outer-spo .inner-content {
         display: none; }
+      html .wrapper .outer-spo p {
+        padding-right: 20px; }
       html .wrapper .outer-spo a {
         text-decoration: none;
         font-size: 200%;
