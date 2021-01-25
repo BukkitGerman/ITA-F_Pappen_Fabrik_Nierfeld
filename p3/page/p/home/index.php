@@ -16,10 +16,41 @@ include '../../template/footer.php';
 	include("../../template/header.html");
 	echo file_get_contents("../../img/copy.html");
 	?>
-	<script type="text/javascript" src="../../js/main.js"></script>
 	<div class="wrapper">
 		<div class="content sbs">
-			<div>
+			<div id="con_">
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 4</div>
+					  <img src="../../img/slider1.jpg" style="width:100%">
+					  <div class="text">Büro</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 4</div>
+					  <img src="../../img/slider2.jpg" style="width:100%">
+					  <div class="text">Alterpapier abgabe</div>
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">3 / 4</div>
+					  <img src="../../img/slider3.jpg" style="width:100%">
+					  <div class="text">Einfahrt</div>
+					</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">4 / 4</div>
+					  <img src="../../img/slider4.jpg" style="width:100%">
+					  <div class="text">Hof</div>
+					</div>
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<div id="slider_dots" style="text-align:center">
+  					<span class="dot" onclick="currentSlide(1)"></span> 
+  					<span class="dot" onclick="currentSlide(2)"></span> 
+  					<span class="dot" onclick="currentSlide(3)"></span> 
+  					<span class="dot" onclick="currentSlide(4)"></span> 
+				</div>
 			<?php
 				$Parsedown = new Parsedown();
 				echo $Parsedown->text(file_get_contents("../../content/home.md"));
@@ -43,5 +74,6 @@ include '../../template/footer.php';
 		echo showFooter	("../template/footer.php");
 	?>
 </div>
+<script type="text/javascript" src="../../js/main.js"></script>
 </body>
 </html>

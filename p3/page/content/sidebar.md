@@ -4,27 +4,31 @@
 <table>
  <tr>
   <td>Montag:</td>
-  <td>00:00 - 00:00</td>
+  <td>07:30 - 16:30</td>
  </tr>
 
  <tr>
   <td>Dienstag:</td>
-  <td>00:00 - 00:00</td>
+  <td>07:30 - 16:30</td>
  </tr>
  <tr>
   <td>Mittwoch:</td>
-  <td>00:00 - 00:00</td>
+  <td>07:30 - 16:30</td>
  </tr>
  <tr>
   <td>Donerstag:</td>
-  <td>00:00 - 00:00</td>
+  <td>07:30 - 16:30</td>
  </tr>
  <tr>
   <td>Freitag:</td>
-  <td>00:00 - 00:00</td>
+  <td>07:30 - 14:30</td>
  </tr>
  <tr>
   <td>Samstag:</td>
-  <td>00:00 - 00:00</td>
+  <td>Geschlossen</td>
+ </tr>
+ <tr>
+  <td>Sonntag:</td>
+  <td>Geschlossen</td>
  </tr>
 </table>
