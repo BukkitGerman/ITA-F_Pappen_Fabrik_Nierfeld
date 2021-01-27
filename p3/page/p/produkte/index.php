@@ -27,15 +27,27 @@ echo file_get_contents("../../img/copy.html");
 			$content = file_get_contents("../../content/produkte.md");
 			$content = explode ("---", $content);
 
+			function startsWith( $haystack, $needle ) {
+			    $length = strlen( $needle );
+			    return substr( $haystack, 0, $length ) === $needle;
+			}
+
 			foreach ($content as $c => $key) {
-				echo "<div class='outer-spo'>";
-				echo "	<a href='#hide".$c."' class='hide btn' id='hide".$c."'>+ ".explode(" ", trim($key))[0]."</a>";
-    			echo "	<a href='#show".$c."' class='show btn' id='show".$c."'>- ".explode(" ", trim($key))[0]."</a>";
-    			echo "<hr class='line'>";
-    			echo "	<div class='inner-content'>";
-				echo 		$Parsedown->text($key); //MarkdownExtended::parse($key);
-				echo "	</div>";
-				echo "</div>";
+				if($Parsedown->text($key) == "<p>+++</p>"){
+					echo "<br>";
+					echo "<hr>";
+				}elseif(startsWith($Parsedown->text($key), "<p>++Head")){
+					echo "<h2 style='text-align: center;'>". substr($Parsedown->text($key), 9) ."</h2>";
+				}else{
+					echo "<div class='outer-spo'>";
+					echo "	<a href='#hide".$c."' class='hide btn' id='hide".$c."'>+ ".explode(" ", trim($key))[0]."</a>";
+					echo "	<a href='#show".$c."' class='show btn' id='show".$c."'>- ".explode(" ", trim($key))[0]."</a>";
+					echo "<hr class='line'>";
+					echo "	<div class='inner-content'>";
+					echo 		$Parsedown->text($key);
+					echo "	</div>";
+					echo "</div>";
+				}
 			}
 			
 		 ?>

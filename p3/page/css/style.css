@@ -172,6 +172,7 @@ html {
       flex-direction: row; }
     html .wrapper .outer-spo {
       border: 1px solid #a9a9a9;
+      background: #eeeeee;
       margin: 10px;
       padding-left: 20px; }
       html .wrapper .outer-spo hr {
