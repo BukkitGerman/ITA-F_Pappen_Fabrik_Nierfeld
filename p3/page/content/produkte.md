@@ -22,7 +22,7 @@ Vollpappe stellen unsere Kunden Polsterpappe für Möbelteile, Spulen, Stülpdec
 ---
 +++
 ---
-++Head Andere Pappen hier einfügen!
+++Head Verarbeitete Pappe
 
 ---
 Vollpappe stellen unsere Kunden Polsterpappe für Möbelteile, Spulen, Stülpdeckelkartons, Palettenabdeckungen und Gitterboxeinlagen her. Ferner lassen sich auch sehr gut Kantenschutzwinkel hieraus herstellen. Vollpappe ist universell, stabil und lässt sich gut weiterverarbeiten, z. B. werden Gitterfacheinsätze, Trenneinsätze, Stegeinsätze, Gefache sowie Dichtungsringe aus Vollpappe gefertigt.   
